@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "globalStorage": true,
+        "workspaceStorage": true,
+    }
+}
