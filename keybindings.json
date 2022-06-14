@@ -86,4 +86,13 @@
                                      "when": "terminalFocus && terminalProcessSupported" },
 // ctrl+; enter = maximize editor
 { "key": "ctrl+; enter",          "command": "workbench.action.minimizeOtherEditors" },
+
+// Run Git Commands
+{ "key": "ctrl+; g",              "command": "workbench.action.tasks.runTask",
+                                     "args": "git commit" },
+{ "key": "ctrl+; ctrl+shift+g",   "command": "workbench.action.tasks.runTask",
+                                     "args": "git commit: all" },
+{ "key": "ctrl+; ctrl+alt+g",     "command": "workbench.action.tasks.runTask",
+                                     "args": "git commit: amend" },
+
 ]
