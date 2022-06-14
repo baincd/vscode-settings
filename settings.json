@@ -228,6 +228,14 @@
         "items": []
     },
 
+    "macros.list": {
+        "format-json-doc": [
+            { "command": "changeLanguageMode.change", "args": "json" },
+            { "command": "$delay", "args": { "delay": 50 } },
+            "editor.action.formatDocument"
+        ]
+    },
+
     // Markdown Settings
     "markdown-color-plus.currentHeaders.background.enabled": true, // no change from default, may be changed by Settings-on-fire
     "markdown.preview.doubleClickToSwitchToEditor": false, // Disable by default, may be changed by Settings-on-fire

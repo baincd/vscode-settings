@@ -95,4 +95,10 @@
 { "key": "ctrl+; ctrl+alt+g",     "command": "workbench.action.tasks.runTask",
                                      "args": "git commit: amend" },
 
+// Change Language Mode shortcuts (require `usernamehw.change-language-mode` and `ctf0.macros`)
+{ "key": "ctrl+; m",              "command": "changeLanguageMode.change",
+                                     "args": "markdown" },
+{ "key": "ctrl+; j",              "command": "changeLanguageMode.change",
+                                     "args": "json" },
+{ "key": "ctrl+; ctrl+shift+j",   "command": "macros.format-json-doc", },
 ]

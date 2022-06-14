@@ -13,6 +13,8 @@
 - Insert Unicode: `brunnerh.insert-unicode`
 
 ## Very Useful
+- Change Language Mode: `usernamehw.change-language-mode`
+- Macros `ctf0.macros` (fork of geddski.macros)
 - DupChecker (uniq command): `jianbingfang.dupchecker`
 - Filter Lines (grep command): `earshinov.filter-lines`
 - PDF Preview: `tomoki1207.pdf`
