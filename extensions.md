@@ -12,15 +12,25 @@
 - Printing: `pdconsec.vscode-print`
 - Insert Unicode: `brunnerh.insert-unicode`
 
-## Very Useful
+## Very Useful (General)
 - Change Language Mode: `usernamehw.change-language-mode`
 - Macros `ctf0.macros` (fork of geddski.macros)
+- GitLens — Git supercharged: `eamodio.gitlens`
 - DupChecker (uniq command): `jianbingfang.dupchecker`
 - Filter Lines (grep command): `earshinov.filter-lines`
 - PDF Preview: `tomoki1207.pdf`
+
+## Very Useful (Programming Languages)
 - Diff Folding: `baincd.diff-lang-folding`
 - Diff Colors: `baincd.diff-lang-colorizer`
 - Markdown Colors: `baincd.markdown-color-plus`
+- Markdown Table Formatter: `fcrespo82.markdown-table-formatter`
+- Markdown All in One: `yzhang.markdown-all-in-one`
+- shellman: `Remisa.shellman`
+- Bash IDE: `mads-hartmann.bash-ide-vscode`
+- Coverage Gutters: `ryanluker.vscode-coverage-gutters`
+- Keep a Changelog: `RLNT.keep-a-changelog`
 
-## Misc
+## Other
 - Overtype `drmerfy.overtype`
+- Workspace Storage Cleanup: `mehyaa.workspace-storage-cleanup`
