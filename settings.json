@@ -35,7 +35,10 @@
     "window.menuBarVisibility": "hidden", // Hide by default, may be changed by Settings-on-fire
     "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
-    "workbench.startupEditor": "none",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.languageDetection": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.editor.revealIfOpen": true,
     "breadcrumbs.enabled": true, // no change from default, may be changed by Settings-on-fire
     "editor.renderLineHighlight": "line",  // no change from default, may be changed by Settings-on-fire
     "debug.console.wordWrap": false, // Disable by default, may be changed by Settings-on-fire
@@ -46,6 +49,7 @@
     "editor.linkedEditing": true, // Depending on the language, related symbols, e.g. HTML tags, are updated while editing.
     "editor.copyWithSyntaxHighlighting": false,
     "editor.emptySelectionClipboard": false,
+    "diffEditor.renderSideBySide": false,
     "files.insertFinalNewline": true, // Enable by default, may be changed by Settings-on-fire
     "explorer.autoReveal": false, // Disable by default, may be changed by Settings-on-fire
     "files.associations": {
@@ -59,26 +63,30 @@
     // Set via integrated-terminal > Select Default Shell
     // Windows will be something like "C:\\Program Files\\Git\\bin\\bash.exe"
     "terminal.integrated.shell.linux": "/bin/bash",
-    // "terminal.integrated.cwd": "${fileDirname}", // Open to firector of current file - broken in multi-root workspaces (#136099).  Use Tyriar.vscode-terminal-here as workaround
+    // "terminal.integrated.cwd": "${fileDirname}", // Open to directory of current file - broken in multi-root workspaces (#136099).  Use Tyriar.vscode-terminal-here as workaround
     "terminal.integrated.scrollback": 10000,
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.toggleSidebarVisibility",
         "workbench.view.explorer",
         "workbench.files.action.showActiveFileInExplorer",
-        "workbench.action.reloadWindow",
         "workbench.action.quickOpenTerm",
 
         "baincd.mini-command-palettes.cmds.activity-bar-palette",
         "baincd.mini-command-palettes.cmds.panel-palette",
         "baincd.mini-command-palettes.cmds.java-dev",
         "baincd.mini-command-palettes.cmds.diff-palette",
-        "baincd.mini-command-palettes.cmds.git-palette"
-    
+        "baincd.mini-command-palettes.cmds.git-palette",
+        "workbench.action.debug.selectandstart"
     ],
 
     // Preferred General Extensions Settings
     "cSpell.diagnosticLevel": "Information", // no change from default, may be changed by Settings-on-fire
+    "cSpell.enableFiletypes": [
+        "git-rebase"
+    ],
+    "coverage-gutters.showLineCoverage": true,
     "filterlines.createNewTab": false,
+    // #region gitlens settings
     "gitlens.codeLens.enabled": false, // Disable by default, may be changed by Settings-on-fire
     "gitlens.codeLens.scopes": [
         "document",
@@ -92,11 +100,13 @@
             "compare": false // Remove the "Open Changes with Previous Revision", "Show Revision Commit", "Open Changes with Next Revision" buttons in editor group
         },
     },
+    "gitlens.plusFeatures.enabled": false,
+    // #endregion gitlens settings
     "overtype.perEditor": true,
     "print.browserPath": "/usr/bin/google-chrome-stable --incognito",
     "print.lineNumbers": "off", // Workaround to https://github.com/earshinov/vscode-filter-lines/issues/9
     "pdf-preview.default.cursor": "hand",
-    
+
     // #region Todo Tree Settings
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.)|\\*\\*)[ \\t]*($TAGS)",   // add ** to proposed fix from https://github.com/Gruntfuggly/todo-tree/issues/536#issuecomment-935272935
     "todo-tree.general.tags": [
@@ -111,9 +121,9 @@
         "FIXME",
         "TODO",
         "XXX",
+        "[]", // Added
         "[ ]", // Todo-Tree Markdown Fix https://github.com/Gruntfuggly/todo-tree#markdown-support
         "[x]", // Todo-Tree Markdown Fix https://github.com/Gruntfuggly/todo-tree#markdown-support
-        "[]", // Added
         "[>]", // Added
         "[>>]" // Added
     ],
@@ -298,6 +308,10 @@
                     "command": "workbench.view.extension.todo-tree-container"
                 },
                 {
+                    "label": "$(live-share) Live Share",
+                    "command": "workbench.view.extension.liveshare"
+                },
+                {
                     "label": "$(kebab-vertical) Toggle Activity Bar",
                     "command": "workbench.action.toggleActivityBarVisibility"
                 },
@@ -369,6 +383,14 @@
                 {
                     "label": "$(type-hierarchy) Show Type Hierarchy",
                     "command": "java.action.showTypeHierarchy"
+                },
+                {
+                    "label": "$(symbol-event) Build Workspace",
+                    "command": "java.project.build.workspace"
+                },
+                {
+                    "label": "$(close) Clean Java Language Server Workspace",
+                    "command": "java.project.clean.workspace"
                 },
                 {
                     "label": "$(circuit-board) Delombok",
@@ -501,7 +523,7 @@
                     "label": "␢  Toggle Show / Hide Whitespace Differences",
                     "command": "toggle.diff.ignoreTrimWhitespace"
                 },
-                // Not Available - Open Diff (Staged)
+                // Open Diff (Staged)??
             ]
         },
         "git-palette": {
@@ -565,6 +587,8 @@
     "markdown.preview.scrollPreviewWithEditor": false, // Disable by default, may be changed by Settings-on-fire
     "markdown.extension.syntax.decorations": false,
     "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.tableFormatter.enabled": false,
+    "markdown-table-formatter.enableSort": false,
 
     // Java settings
     //   "java.configuration.runtimes": [ # JDKs available to build/run code
@@ -573,7 +597,6 @@
     //       "path": "c:\\path\\to\\jdk"
     //     }
     //   ],
-    //   "java.home": "c:\\path\\to\\jdk", # JDK used by Java Language Server
     //   "spring-boot.ls.java.home": "c:\\path\\to\\jdk" # JDK used by Spring Boot Language Server
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.test.report.showAfterExecution": "always",
@@ -599,6 +622,9 @@
     ],
     "java.referencesCodeLens.enabled": false, // Enable by default, may be changed by Settings-on-fire
     "java.autobuild.enabled": true, // no change from default, may be changed by Settings-on-fire
+
+    // Lombok
+    // "java.jdt.ls.vmargs": "DEFAULT_PARAMS -javaagent:\"/home/chris/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
 
     // Maven Settings
     "java.import.gradle.enabled": false,
