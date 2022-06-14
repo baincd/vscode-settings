@@ -8,6 +8,7 @@
 
 ## Must Haves
 - Quick Settings: `edb.settings-on-fire`
+- Todo Tree `gruntfuggly.todo-tree`
 - Printing: `pdconsec.vscode-print`
 - Insert Unicode: `brunnerh.insert-unicode`
 
