@@ -47,7 +47,8 @@
                                      "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly" },
 
 // ctrl+shift+` = "switch active terminal" (replaces "new terminal")
-{ "key": "ctrl+shift+`",          "command": "workbench.action.quickOpenTerm" },
+{ "key": "ctrl+shift+`",          "command": "workbench.action.quickOpenTerm", 
+                                     "when": "terminalProcessSupported" },
 { "key": "ctrl+shift+`",          "command": "-workbench.action.terminal.new",
                                      "when": "terminalProcessSupported" },
 
