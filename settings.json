@@ -41,6 +41,7 @@
     "files.insertFinalNewline": true, // Enable by default, may be changed by Settings-on-fire
     "explorer.autoReveal": false, // Disable by default, may be changed by Settings-on-fire
     "files.associations": {
+        "*.md.txt": "markdown"
     },
     "workbench.editorAssociations": {
         "git-rebase-todo": "default"
@@ -125,6 +126,10 @@
             "on": {  "_label": "off → on", "debug.console.collapseIdenticalLines": true  },
             "off": { "_label": "on → off", "debug.console.collapseIdenticalLines": false }
         },
+        "Markdown Preview: Editing Mode": {
+            "on": {  "_label": "off → on", "markdown.preview.doubleClickToSwitchToEditor": true,  "markdown.preview.markEditorSelection": true,  "markdown.preview.scrollEditorWithPreview": true,  "markdown.preview.scrollPreviewWithEditor": true, },
+            "off": { "_label": "on → off", "markdown.preview.doubleClickToSwitchToEditor": false, "markdown.preview.markEditorSelection": false, "markdown.preview.scrollEditorWithPreview": false, "markdown.preview.scrollPreviewWithEditor": false, }
+        },
         "Menu Bar": {
             "on": {  "_label": "off → on", "window.menuBarVisibility": "visible" },
             "off": { "_label": "on → off", "window.menuBarVisibility": "hidden"  }
@@ -172,6 +177,16 @@
         },
         "items": []
     },
+
+    // Markdown Settings
+    "markdown-color-plus.currentHeaders.background.enabled": true, // no change from default, may be changed by Settings-on-fire
+    "markdown.preview.doubleClickToSwitchToEditor": false, // Disable by default, may be changed by Settings-on-fire
+    "markdown.preview.markEditorSelection": false, // Disable by default, may be changed by Settings-on-fire
+    "markdown.preview.scrollEditorWithPreview": false, // Disable by default, may be changed by Settings-on-fire
+    "markdown.preview.scrollPreviewWithEditor": false, // Disable by default, may be changed by Settings-on-fire
+    "markdown.extension.syntax.decorations": false,
+    "markdown.extension.list.indentationSize": "inherit",
+
 
     "update.mode": "default",
 }
