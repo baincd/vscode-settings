@@ -5,13 +5,9 @@
 { "key": "ctrl+d",                "command": "-editor.action.addSelectionToNextFindMatch",
                                      "when": "editorFocus" },
 
-// ctrl+shift+/ = "block comment" (moved from ctrl+shift+a)
-// ctrl+shift+a = "toggle activity bar"
+// ctrl+shift+/ = "block comment" (duplicate ctrl+shift+a)
 { "key": "ctrl+shift+/",          "command": "editor.action.blockComment",
                                      "when": "editorTextFocus && !editorReadonly" },
-{ "key": "ctrl+shift+a",          "command": "-editor.action.blockComment",
-                                     "when": "editorTextFocus && !editorReadonly" },
-{ "key": "ctrl+shift+a",          "command": "workbench.action.toggleActivityBarVisibility" },
 
 // ctrl+\ = "toggle explorer sidebar" (replaces "split editor", duplicate ctrl+shift+e)
 { "key": "ctrl+\\",               "command": "workbench.view.explorer",
@@ -63,11 +59,6 @@
 { "key": "ctrl+shift+w",          "command": "workbench.action.closeAllEditors" },
 { "key": "ctrl+shift+w",          "command": "-workbench.action.closeWindow" },
 
-// ctrl+shift+f5 = "reload window (replaces "debug restart")
-{ "key": "ctrl+shift+f5",         "command": "workbench.action.reloadWindow" },
-{ "key": "ctrl+shift+f5",         "command": "-workbench.action.debug.restart",
-                                     "when": "inDebugMode" },
-
 // ctrl+alt+d = select launch configuration and start debugging
 { "key": "ctrl+alt+d",            "command": "workbench.action.debug.selectandstart" },
 
@@ -87,13 +78,6 @@
 // ctrl+; enter = maximize editor
 { "key": "ctrl+; enter",          "command": "workbench.action.minimizeOtherEditors" },
 
-// Run Git Commands
-{ "key": "ctrl+; g",              "command": "workbench.action.tasks.runTask",
-                                     "args": "git commit" },
-{ "key": "ctrl+; ctrl+shift+g",   "command": "workbench.action.tasks.runTask",
-                                     "args": "git commit: all" },
-{ "key": "ctrl+; ctrl+alt+g",     "command": "workbench.action.tasks.runTask",
-                                     "args": "git commit: amend" },
 
 // Change Language Mode shortcuts (require `usernamehw.change-language-mode` and `ctf0.macros`)
 { "key": "ctrl+; m",              "command": "changeLanguageMode.change",
