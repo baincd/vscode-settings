@@ -21,3 +21,6 @@
 - Diff Folding: `baincd.diff-lang-folding`
 - Diff Colors: `baincd.diff-lang-colorizer`
 - Markdown Colors: `baincd.markdown-color-plus`
+
+## Misc
+- Overtype `drmerfy.overtype`
