@@ -3,15 +3,23 @@
     "workbench.colorTheme": "Quiet Light", // may be changed by Settings-on-fire
     "workbench.colorCustomizations": {
         "[Quiet Light]": {
+            // Make debug console easier to read
             "debugConsole.infoForeground": "#4e4e4e", // Override default light-theme value of #75beff
             "debugConsole.sourceForeground": "#5eb2fc", // Override default light-theme value of #616161
+            // Highlight the selected activity bar item 
             "activityBar.activeBackground": "#9900ff20", // Override default light-theme value of null
+            // Make borders between editors and other sections easier to see
             "editorGroup.border": "#d3d3d3", // Override default light-theme value of "#e7e7e7"
             "editorOverviewRuler.border": "#dddddd", // Override default light-theme value of "#7f7f7f4d"
 
+            // Make text on diff editor deleted lines easier to read by lightening the background
             "diffEditor.removedTextBackground": "#ff000022", // Default: "#ff000033"
 
-            // titlebar and statusbar                          light-theme  Light+    QuietLight  QuietLightForVsc
+            // Titlebar and status bar (compare and borrow from the default for light themes, Light+, QuietLight, and QuietLightForVsc(extension))
+            // 1. Change titlebar from purple to gray
+            // 2. Use different colors for status bar for normal workspaces, unsaved workspaces and when debugging (similar to other themes)
+            // 3. Change status bar colors for error and remote
+            //                                                 light-theme  Light+    QuietLight  QuietLightForVsc
             "titleBar.activeBackground": "#dddddd",      //  [#dddddd]               #c4b7d7      #c4b7d7
             "statusBar.background": "#4b83cd",           //   #007acc                #705697     [#4b83cd]
             "statusBar.noFolderBackground": "#705697",   //   #68217a               [#705697]     #aa3731
