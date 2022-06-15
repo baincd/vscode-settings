@@ -107,6 +107,19 @@
     "print.lineNumbers": "off", // Workaround to https://github.com/earshinov/vscode-filter-lines/issues/9
     "pdf-preview.default.cursor": "hand",
 
+    "custom-auto-fold.rules": [
+        {
+            "fileGlob": "**/{*.java,*.class}",
+            "linePattern": "^import\\s",
+            "firstMatchOnly": true
+        },
+        {
+            "fileGlob": "**/*.class",
+            "linePattern": "^(/| )\\*.*[cC](opyright|OPYRIGHT)",
+            "firstMatchOnly": true
+        }
+    ],
+
     // #region Todo Tree Settings
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.)|\\*\\*)[ \\t]*($TAGS)",   // add ** to proposed fix from https://github.com/Gruntfuggly/todo-tree/issues/536#issuecomment-935272935
     "todo-tree.general.tags": [

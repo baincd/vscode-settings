@@ -21,15 +21,21 @@
 - PDF Preview: `tomoki1207.pdf`
 
 ## Very Useful (Programming Languages)
-- Diff Folding: `baincd.diff-lang-folding`
-- Diff Colors: `baincd.diff-lang-colorizer`
-- Markdown Colors: `baincd.markdown-color-plus`
-- Markdown Table Formatter: `fcrespo82.markdown-table-formatter`
-- Markdown All in One: `yzhang.markdown-all-in-one`
-- shellman: `Remisa.shellman`
-- Bash IDE: `mads-hartmann.bash-ide-vscode`
+- Diff
+    - Diff Folding: `baincd.diff-lang-folding`
+    - Diff Colors: `baincd.diff-lang-colorizer`
+- Markdown
+    - Markdown Colors: `baincd.markdown-color-plus`
+    - Markdown Table Formatter: `fcrespo82.markdown-table-formatter`
+    - Markdown All in One: `yzhang.markdown-all-in-one`
+    - Keep a Changelog: `RLNT.keep-a-changelog`
+- Bash
+    - shellman: `Remisa.shellman`
+    - Bash IDE: `mads-hartmann.bash-ide-vscode`
+- Java
+    - Java Class Imports Folding: `baincd.java-class-imports-folding`
 - Coverage Gutters: `ryanluker.vscode-coverage-gutters`
-- Keep a Changelog: `RLNT.keep-a-changelog`
+- Custom Auto Fold: `baincd.custom-auto-fold`
 
 ## Other
 - Overtype `drmerfy.overtype`
