@@ -87,6 +87,10 @@
 // ctrl+; enter = maximize editor
 { "key": "ctrl+; enter",          "command": "workbench.action.minimizeOtherEditors" },
 
+// Special versions of existing shortcuts
+{ "key": "ctrl+; ctrl+shift+f",   "command": "search.action.openNewEditor" },
+{ "key": "ctrl+k ctrl+shift+p",   "command": "workbench.action.showAllEditorsByMostRecentlyUsed" },
+{ "key": "ctrl+; ctrl+q",         "command": "workbench.action.openView" },
 
 // Change Language Mode shortcuts (require `usernamehw.change-language-mode` and `ctf0.macros`)
 { "key": "ctrl+; m",              "command": "changeLanguageMode.change",
