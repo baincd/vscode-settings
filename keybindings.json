@@ -60,9 +60,6 @@
 { "key": "ctrl+shift+w",          "command": "workbench.action.closeAllEditors" },
 { "key": "ctrl+shift+w",          "command": "-workbench.action.closeWindow" },
 
-// ctrl+alt+d = select launch configuration and start debugging
-{ "key": "ctrl+alt+d",            "command": "workbench.action.debug.selectandstart" },
-
 // ctrl+shift+, = "settings on fire" (replaces inPlaceReplaceUp)
 { "key": "ctrl+shift+,",          "command": "settingsOnFire.toggleSettings" },
 { "key": "ctrl+shift+,",          "command": "-editor.action.inPlaceReplace.up",
@@ -99,11 +96,13 @@
                                      "args": "json" },
 { "key": "ctrl+; ctrl+shift+j",   "command": "macros.format-json-doc", },
 
-// Mini Command Palettes
+// Command Palettes
 { "key": "ctrl+alt+b",            "command": "baincd.mini-command-palettes.cmds.activity-bar-palette" },
 { "key": "ctrl+alt+j",            "command": "baincd.mini-command-palettes.cmds.panel-palette" },
 { "key": "ctrl+alt+;",            "command": "baincd.mini-command-palettes.cmds.java-dev" },
 { "key": "ctrl+alt+/",            "command": "baincd.mini-command-palettes.cmds.diff-palette" },
 { "key": "ctrl+alt+g",            "command": "baincd.mini-command-palettes.cmds.git-palette" },
+{ "key": "ctrl+alt+d",            "command": "workbench.action.debug.selectandstart" },
+{ "key": "ctrl+alt+t",            "command": "workbench.action.tasks.runTask" },
 
 ]
