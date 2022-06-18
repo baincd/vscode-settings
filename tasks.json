@@ -2,122 +2,122 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
+    // cd ./$(git rev-parse --show-cdup) => cd to root of git repo
     "tasks": [
         {
             "label": "git commit",
-            "detail": "commit staged changes",
+            "detail": "Commit staged changes",
             "type": "shell",
-            "command": "git commit",
+            "command": "cd ./$(git rev-parse --show-cdup) && git commit",
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
             },
             "presentation": {
                 "reveal": "silent",
-                "panel": "shared",
+                "close": true,
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\WINDOWS\\System32\\cmd.exe", "args": [ "/d", "/c" ]} } // https://github.com/microsoft/vscode/issues/36154#issuecomment-336403892
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "command": "\"cd ./$(git rev-parse --show-cdup) && git commit\"",
             }
         },
         {
-            "label": "git commit: all",
-            "detail": "commit all working directory changes",
+            "label": "git commit-all",
+            "detail": "Commit all working directory changes",
             "type": "shell",
-            "command": "git add -A && git commit",
+            "command": "cd ./$(git rev-parse --show-cdup) && git add -A && git commit",
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
             },
             "presentation": {
                 "reveal": "silent",
-                "panel": "shared",
+                "close": true,
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\WINDOWS\\System32\\cmd.exe", "args": [ "/d", "/c" ]} } // https://github.com/microsoft/vscode/issues/36154#issuecomment-336403892
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "command": "\"cd ./$(git rev-parse --show-cdup) && git add -A && git commit\"",
             }
         },
         {
-            "label": "git commit: amend",
-            "detail": "amend staged changes to HEAD",
+            "label": "git commit-amend",
+            "detail": "Amend staged changes to HEAD",
             "type": "shell",
-            "command": "git commit --amend",
+            "command": "cd ./$(git rev-parse --show-cdup) && git commit --amend",
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
             },
             "presentation": {
                 "reveal": "silent",
-                "panel": "shared",
+                "close": true,
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\WINDOWS\\System32\\cmd.exe", "args": [ "/d", "/c" ]} } // https://github.com/microsoft/vscode/issues/36154#issuecomment-336403892
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "command": "\"cd ./$(git rev-parse --show-cdup) && git commit --amend\"",
             }
         },
         {
-            "label": "git logw",
-            "detail": "launch gitk",
+            "label": "git log-gui",
+            "detail": "Launch gitk",
             "type": "shell",
             "command": "gitk",
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
             },
             "runOptions": {
-                "instanceLimit": 10
+                "instanceLimit": 10,
             },
             "presentation": {
                 "reveal": "silent",
-                "panel": "shared",
-                "group": "git-window",
-                "close": true
+                "close": true,
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\WINDOWS\\System32\\cmd.exe", "args": [ "/d", "/c" ]} } // https://github.com/microsoft/vscode/issues/36154#issuecomment-336403892
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
             }
         },
         {
-            "label": "git logw: ${file}",
-            "detail": "launch gitk for ${file}",
+            "label": "git log-gui(file)",
+            "detail": "Launch gitk ${file}",
             "type": "shell",
             "command": "gitk -- ${fileBasename}",
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
             },
             "runOptions": {
-                "instanceLimit": 10
+                "instanceLimit": 10,
             },
             "presentation": {
                 "reveal": "silent",
-                "panel": "shared",
-                "group": "git-window",
-                "close": true
+                "close": true,
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\WINDOWS\\System32\\cmd.exe", "args": [ "/d", "/c" ]} } // https://github.com/microsoft/vscode/issues/36154#issuecomment-336403892
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "command": "\"gitk -- ${fileBasename}\"",
             }
         },
         {
-            "label": "git commit: commitw",
-            "detail": "launch Git Gui",
+            "label": "git commit-gui",
+            "detail": "Launch Git Gui",
             "type": "shell",
             "command": "git gui",
             "options": {
                 "cwd": "${fileDirname}"
             },
             "runOptions": {
-                "instanceLimit": 10
+                "instanceLimit": 10,
             },
             "presentation": {
                 "reveal": "silent",
-                "panel": "shared",
-                "group": "git-window",
-                "close": true
+                "close": true,
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\WINDOWS\\System32\\cmd.exe", "args": [ "/d", "/c" ]} } // https://github.com/microsoft/vscode/issues/36154#issuecomment-336403892
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "command": "\"git gui\"",
             }
         },
         {
@@ -125,17 +125,17 @@
             "type": "shell",
             "presentation": {
                 "reveal": "silent",
-                "panel": "shared",
+                "close": true,
             },
             "problemMatcher": [],
-            // Requires downloading lombok.jar
+            // Requires downloading lombok jar
             "linux": {
-                "command": "java -jar ~/.vscode/lombok-1.18.24.jar delombok ${file} -p > ${file}_delomboked && mv ${file} ${file}_lombok && mv ${file}_delomboked ${file}",
+                "command": "java -jar /home/chris/.vscode/lombok-1.18.24.jar delombok ${file} -p > ${file}_delomboked && mv ${file} ${file}_lombok && mv ${file}_delomboked ${file}",
             },
-            "windows": {
+             "windows": {
+                "options": {"shell": {"executable": "C:\\WINDOWS\\System32\\cmd.exe", "args": [ "/d", "/c" ]} }, // https://github.com/microsoft/vscode/issues/36154#issuecomment-336403892
                 "command": "java -jar c:\\Users\\chris\\.vscode\\lombok-1.18.24.jar delombok ${file} -p > ${file}_delomboked && move ${file} ${file}_lombok && move ${file}_delomboked ${file}",
-                "options": {"shell": {"executable": "C:\\WINDOWS\\System32\\cmd.exe", "args": [ "/d", "/c" ]} } // https://github.com/microsoft/vscode/issues/36154#issuecomment-336403892
-            }
-        }
+            },
+        },
     ]
 }

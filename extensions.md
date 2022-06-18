@@ -42,5 +42,6 @@
 - Custom Auto Fold: `baincd.custom-auto-fold`
 
 ## Other
+- Draw.io Integration: `hediet.vscode-drawio`
 - Overtype `drmerfy.overtype`
 - Workspace Storage Cleanup: `mehyaa.workspace-storage-cleanup`

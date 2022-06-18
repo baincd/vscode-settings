@@ -1,6 +1,6 @@
 {
     // Preferred Theme
-    "workbench.colorTheme": "Quiet Light", // may be changed by Settings-on-fire
+    "workbench.colorTheme": "Quiet Light", // Default to "Quiet Light", may be changed by Settings-on-fire
     "workbench.colorCustomizations": {
         "[Quiet Light]": {
             // Make debug console easier to read
@@ -11,9 +11,12 @@
             // Make borders between editors and other sections easier to see
             "editorGroup.border": "#d3d3d3", // Override default light-theme value of "#e7e7e7"
             "editorOverviewRuler.border": "#dddddd", // Override default light-theme value of "#7f7f7f4d"
+            "sideBar.border": "#d3d3d3", // Override default light-theme value of null
+            "panel.border": "#d3d3d3", // override Quiet Light value of #f5f5f5
 
             // Make text on diff editor deleted lines easier to read by lightening the background
-            "diffEditor.removedTextBackground": "#ff000022", // Default: "#ff000033"
+            // "diffEditor.insertedTextBackground": "#9bb95522", // Default: "#9bb95533", 
+            "diffEditor.removedTextBackground": "#ff000022", // Default: "#ff000033",
 
             // Titlebar and status bar (compare and borrow from the default for light themes, Light+, QuietLight, and QuietLightForVsc(extension))
             // 1. Change titlebar from purple to gray
@@ -26,74 +29,100 @@
             "statusBar.debuggingBackground": "#cc6633",  //  [#cc6633]               #705697      #aa3731
             "statusBarItem.errorBackground": "#c72e0f",  //   #611708     [#c72e0f]  #c72516      #3d0000
             "statusBarItem.remoteBackground": "#16825d", //   #007acc     [#16825d]  #4e3c69      #448c27
+
+            // Color of filenames with warnings (differentiate from color of modified files "#e2c08d")
+            "list.warningForeground": "#b79600", // Light Default = "#855f00", Dark Default = "#cca700"
         }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Quiet Light]": {
+            // Make comments slightly darker
+            "comments": "#A2A2A2" // Default: #AAAAAA
+        }
+
     },
     "workbench.iconTheme": "vscode-icons",
 
     // Preferred UI settings
     "window.title": "${rootName}${separator}${dirty}${activeEditorShort}",  // Default: "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
-    "window.menuBarVisibility": "hidden", // Hide by default, may be changed by Settings-on-fire
+    "window.menuBarVisibility": "hidden", // Default to "hidden", may be changed by Settings-on-fire
     "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
+    "workbench.tree.indent": 20,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.languageDetection": false,
     "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.revealIfOpen": true,
-    "breadcrumbs.enabled": true, // no change from default, may be changed by Settings-on-fire
-    "editor.renderLineHighlight": "line",  // no change from default, may be changed by Settings-on-fire
-    "debug.console.wordWrap": false, // Disable by default, may be changed by Settings-on-fire
-    "debug.console.collapseIdenticalLines": false, // Disable by default, may be changed by Settings-on-fire
+    "debug.console.wordWrap": false, // Default to false, may be changed by Settings-on-fire
+    "debug.console.collapseIdenticalLines": false, // Default to false, may be changed by Settings-on-fire
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.internalConsoleOptions": "openOnSessionStart",
     "git.enableStatusBarSync": false,
+    "screencastMode.onlyKeyboardShortcuts": true,
+    "liveshare.showInStatusBar": "whileCollaborating",
+    "workbench.editor.autoLockGroups": {
+        "workbench.input.interactive": true,
+        "interactive": true,
+        "workbench.editorinputs.searchEditorInput": true,
+        "vscode.markdown.preview.editor": true,
+        "mainThreadWebview-markdown.preview": true
+    },
+    "workbench.layoutControl.enabled": false,
 
     // Preferred Editor Settings
     "editor.linkedEditing": true, // Depending on the language, related symbols, e.g. HTML tags, are updated while editing.
     "editor.copyWithSyntaxHighlighting": false,
     "editor.emptySelectionClipboard": false,
-    "diffEditor.renderSideBySide": false,
-    "files.insertFinalNewline": true, // Enable by default, may be changed by Settings-on-fire
-    "explorer.autoReveal": false, // Disable by default, may be changed by Settings-on-fire
+    "files.insertFinalNewline": true, // Default to true, may be changed by Settings-on-fire
+    "editor.comments.ignoreEmptyLines": false,
+    "explorer.autoReveal": false, // Default to false, may be changed by Settings-on-fire
     "files.associations": {
-        "*.md.txt": "markdown"
+        "*.md.txt": "markdown",
     },
     "workbench.editorAssociations": {
         "git-rebase-todo": "default"
     },
 
     // Preferred Terminal Settings
-    // Set via integrated-terminal > Select Default Shell
-    // Windows will be something like "C:\\Program Files\\Git\\bin\\bash.exe"
     "terminal.integrated.defaultProfile.linux": "bash",
-    // "terminal.integrated.cwd": "${fileDirname}", // Open to directory of current file - broken in multi-root workspaces (#136099).  Use Tyriar.vscode-terminal-here as workaround
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": {
+             "source": "Git Bash",
+             "icon": "terminal-bash"
+         }
+     },
+     // "terminal.integrated.cwd": "${fileDirname}", // Open to directory of current file - broken in multi-root workspaces (#136099).  Use Tyriar.vscode-terminal-here as workaround
     "terminal.integrated.scrollback": 10000,
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.toggleSidebarVisibility",
         "workbench.view.explorer",
         "workbench.files.action.showActiveFileInExplorer",
         "workbench.action.quickOpenTerm",
+        "workbench.action.toggleAuxiliaryBar",
+        "workbench.action.customizeLayout",
 
         "baincd.mini-command-palettes.cmds.activity-bar-palette",
         "baincd.mini-command-palettes.cmds.panel-palette",
         "baincd.mini-command-palettes.cmds.java-dev",
         "baincd.mini-command-palettes.cmds.diff-palette",
         "baincd.mini-command-palettes.cmds.git-palette",
-        "workbench.action.debug.selectandstart"
+        "workbench.action.debug.selectandstart",
     ],
 
     // Preferred General Extensions Settings
-    "cSpell.diagnosticLevel": "Information", // no change from default, may be changed by Settings-on-fire
     "cSpell.enableFiletypes": [
         "git-rebase"
     ],
     "coverage-gutters.showLineCoverage": true,
     "filterlines.createNewTab": false,
     // #region gitlens settings
-    "gitlens.codeLens.enabled": false, // Disable by default, may be changed by Settings-on-fire
+    "gitlens.advanced.fileHistoryFollowsRenames": true,
     "gitlens.codeLens.scopes": [
         "document",
         "containers",
         "blocks" // Add start of functions, methods, etc
     ],
-    "gitlens.hovers.enabled": false,  // Disable by default, may be changed by Settings-on-fire
     "gitlens.keymap": "none",
     "gitlens.menus": {
         "editorGroup": {
@@ -104,7 +133,7 @@
     // #endregion gitlens settings
     "overtype.perEditor": true,
     "print.browserPath": "/usr/bin/google-chrome-stable --incognito",
-    "print.lineNumbers": "off", // Workaround to https://github.com/earshinov/vscode-filter-lines/issues/9
+    "print.lineNumbers": "off",
     "pdf-preview.default.cursor": "hand",
 
     "custom-auto-fold.rules": [
@@ -115,18 +144,23 @@
         },
         {
             "fileGlob": "**/*.class",
-            "linePattern": "^(/| )\\*.*[cC](opyright|OPYRIGHT)",
+            "linePattern": "^(\\/| )\\*\\s.*[Cc](opyright|OPYRIGHT)",
             "firstMatchOnly": true
         }
     ],
 
+    "highlight.regexes": {
+        "~~DISABLE DEFAULT HIGHLIGHT REGEXES~~": {}
+    },
+
     // #region Todo Tree Settings
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.)|\\*\\*)[ \\t]*($TAGS)",   // add ** to proposed fix from https://github.com/Gruntfuggly/todo-tree/issues/536#issuecomment-935272935
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+\\.)[ \\t]|\\*\\*)[ \\t]*($TAGS)", // Add **, Fixes to default (Whitespace in pattern does not match newlines, escape '.', require whitespace after bullet/number in md lists)
     "todo-tree.general.tags": [
+        "CDBR>", "CDB-RVW>", // Added
         "CDBR", "CDB-RVW", // Added
         "??", "Q: ", // Added
         "<<<<<<<", // Added
-        "System.out.println","System.out.print","System.err.println","System.err.print","log.debug(\"CDB","log.info(\"CDB","log.warn(\"CDB","console.log","debugger", // Added
+        "System.out.println", "System.out.print", "System.err.println", "System.err.print", "log.debug(\"CDB ", "log.info(\"CDB ", "log.warn(\"CDB ", "console.log","debugger", // Added
         "CDB", "FIXME CDB", "TODO CDB", // Added
         "NEED", // Added
         "BUG",
@@ -134,19 +168,21 @@
         "FIXME",
         "TODO",
         "XXX",
+        "NEED",
         "[]", // Added
         "[ ]", // Todo-Tree Markdown Fix https://github.com/Gruntfuggly/todo-tree#markdown-support
         "[x]", // Todo-Tree Markdown Fix https://github.com/Gruntfuggly/todo-tree#markdown-support
         "[>]", // Added
-        "[>>]" // Added
+        "[>>]", // Added
     ],
     "todo-tree.general.tagGroups": {
         "[ ]": [ "[ ]", "[]" ],
-        "CDB": ["CDB", "FIXME CDB", "TODO CDB"],
-        "CDB-REVIEW": ["CDBR", "CDB-RVW" ],
-        "Qs": ["??", "Q: "],
+        "CDB": [ "CDB", "FIXME CDB", "TODO CDB" ],
+        "CDB-REVIEWED" : [ "CDBR>", "CDB-RVW>", ],
+        "CDB-REVIEW": [ "CDBR", "CDB-RVW" ],
+        "Qs": [ "??", "Q:" ],
         "conflict": ["<<<<<<<"],
-        "DEBUGGING": ["System.out.println","System.out.print","System.err.println","System.err.print","log.debug(\"CDB","log.info(\"CDB","log.warn(\"CDB","console.log","debugger", ],
+        "DEBUGGING": ["System.out.println", "System.out.print", "System.err.println", "System.err.print", "log.debug(\"CDB ", "log.info(\"CDB ", "log.warn(\"CDB ", "console.log","debugger", ]
     },
     "todo-tree.highlights.defaultHighlight": {
         "foreground": "#FFFFFF",
@@ -155,75 +191,88 @@
     },
     "todo-tree.highlights.customHighlight": {
         "CDB": { "icon": "bell", "background": "#A80000", "iconColour": "#A80000" },
+        "CDB-REVIEWED": { "icon": "code-review", "iconColour": "#e80000", "background": "#e80000", "foreground": "#F0F0F0" },
         "CDB-REVIEW": { "icon": "code-review", "iconColour": "#D4AC0D", "background": "#F7DC6F", "foreground": "#424949" },
         "Qs": { "icon": "question", "background": "#9900ff", "iconColour": "#9900ff" },
         "conflict": { "icon": "git-pull-request", "background": "#ff7f00", "iconColour": "#ff7f01" },
         "DEBUGGING": { "icon": "trash" },
         "NEED": { "icon": "issue-opened" },
-        // "[ ]": { "background": "#ff000080" }, // Todo-Tree Markdown Fix https://github.com/Gruntfuggly/todo-tree#markdown-support
-        "[x]": { "background": "#00cc0080", "icon": "check-circle-fill", "iconColour": "#00CC00" }, // Todo-Tree Markdown Fix https://github.com/Gruntfuggly/todo-tree#markdown-support
+        "[x]": { "background": "#00CC0080", "icon": "check-circle-fill", "iconColour": "#00CC00" },
         "[>]": { "background": "#ebb800", "icon": "chevron-right", "iconColour": "#ebb800" },
-        "[>>]": { "background": "DarkRed", "icon": "arrow-right", "iconColour": "DarkRed" }
+        "[>>]": { "background": "#8b0000", "icon": "arrow-right", "iconColour": "#8b0000" },
     },
     "todo-tree.general.statusBar": "tags",
     "todo-tree.tree.labelFormat": "${filename}:${line} ${tag}${after}",
     "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
     // #endregion
 
+    // #region SettingsOnFire
     "settingsOnFire.toggle": {
         "Theme": {
             "on": {  "_label": "light → dark", "workbench.colorTheme": "Default Dark+" },
             "off": { "_label": "dark → light", "workbench.colorTheme": "Quiet Light"   }
         },
         "Git Code Lens": {
-            "on": {  "_label": "disabled → enabled", "gitlens.codeLens.enabled": true  },
-            "off": { "_label": "enabled → disabled", "gitlens.codeLens.enabled": false }
+            "on": {  "_label": "enabled → disabled", "gitlens.codeLens.enabled": false },
+            "off": { "_label": "disabled → enabled", "gitlens.codeLens.enabled": true  }
         },
         "Java Code Lens": {
-            "on": {  "_label": "disabled → enabled", "java.referencesCodeLens.enabled": true,  },
-            "off": { "_label": "enabled → disabled", "java.referencesCodeLens.enabled": false, }
+            "on": {  "_label": "enabled → disabled", "java.referencesCodeLens.enabled": false,
+                                                     "java.implementationsCodeLens.enabled": false},
+            "off": { "_label": "disabled → enabled", "java.referencesCodeLens.enabled": true, 
+                                                     "java.implementationsCodeLens.enabled": true},
         },
         "Java Automatic Build Disabled": {
-            "on": {  "_label": "off → on", "java.autobuild.enabled": false, },
-            "off": { "_label": "on → off", "java.autobuild.enabled": true,  }
+            "on": {  "_label": "off → on",  "java.autobuild.enabled": false, },
+            "off": { "_label": "🟢on → off", "java.autobuild.enabled": true,  }
         },
         "Hide Spelling Errors from Problems View": {
-            "on": {  "_label": "off → on", "cSpell.diagnosticLevel": "Hint",        },
-            "off": { "_label": "on → off", "cSpell.diagnosticLevel": "Information", }
+            "on": {  "_label": "off → on",  "cSpell.diagnosticLevel": "Hint",        },
+            "off": { "_label": "🟢on → off", "cSpell.diagnosticLevel": "Information", }
         },
-        "Git Lens Hovers": {
-            "on": {  "_label": "off → on", "gitlens.hovers.enabled": true, },
-            "off": { "_label": "on → off", "gitlens.hovers.enabled": false, }
+        "Enable Git Lens Hovers": {
+            "on": {  "_label": "off → on",  "gitlens.hovers.enabled": true, },
+            "off": { "_label": "🟢on → off", "gitlens.hovers.enabled": false, }
         },
-        "No Line Highlights": {
-            "on": {  "_label": "off → on", "breadcrumbs.enabled": false, "editor.renderLineHighlight": "none", "markdown-color-plus.currentHeaders.background.enabled": false, },
-            "off": { "_label": "on → off", "breadcrumbs.enabled": true,  "editor.renderLineHighlight": "line", "markdown-color-plus.currentHeaders.background.enabled": true,  }
+        "Screenshot Mode": {
+            "on": {  "_label": "off → on",  "breadcrumbs.enabled": false, "editor.renderLineHighlight": "none", "markdown-color-plus.currentHeaders.background.enabled": false, "cSpell.enabled": false },
+            "off": { "_label": "🟢on → off", "breadcrumbs.enabled": true,  "editor.renderLineHighlight": "line", "markdown-color-plus.currentHeaders.background.enabled": true,  "cSpell.enabled": true  }
         },
         "No EOF New Line": {
-            "on": {  "_label": "off → on", "files.insertFinalNewline": false  },
-            "off": { "_label": "on → off", "files.insertFinalNewline": true   }
+            "on": {  "_label": "off → on",  "files.insertFinalNewline": false  },
+            "off": { "_label": "🟢on → off", "files.insertFinalNewline": true   }
         },
         "Sync Explorer with Active Editor": {
-            "on": {  "_label": "off → on", "explorer.autoReveal": true,  },
-            "off": { "_label": "on → off", "explorer.autoReveal": false, }
+            "on": {  "_label": "off → on",  "explorer.autoReveal": true,  },
+            "off": { "_label": "🟢on → off", "explorer.autoReveal": false, }
         },
         "Debug Console: Word Wrap": {
-            "on": {  "_label": "off → on", "debug.console.wordWrap": true  },
-            "off": { "_label": "on → off", "debug.console.wordWrap": false }
+            "on": {  "_label": "off → on",  "debug.console.wordWrap": true  },
+            "off": { "_label": "🟢on → off", "debug.console.wordWrap": false }
         },
         "Debug Console: Collapse Identical Lines": {
-            "on": {  "_label": "off → on", "debug.console.collapseIdenticalLines": true  },
-            "off": { "_label": "on → off", "debug.console.collapseIdenticalLines": false }
+            "on": {  "_label": "off → on",  "debug.console.collapseIdenticalLines": true  },
+            "off": { "_label": "🟢on → off", "debug.console.collapseIdenticalLines": false }
         },
-        "Markdown Preview: Editing Mode": {
-            "on": {  "_label": "off → on", "markdown.preview.doubleClickToSwitchToEditor": true,  "markdown.preview.markEditorSelection": true,  "markdown.preview.scrollEditorWithPreview": true,  "markdown.preview.scrollPreviewWithEditor": true, },
-            "off": { "_label": "on → off", "markdown.preview.doubleClickToSwitchToEditor": false, "markdown.preview.markEditorSelection": false, "markdown.preview.scrollEditorWithPreview": false, "markdown.preview.scrollPreviewWithEditor": false, }
+        "Markdown: Sync editor and preview": {
+            "on": {  "_label": "off → on",  "markdown.preview.doubleClickToSwitchToEditor": true,  "markdown.preview.markEditorSelection": true,  "markdown.preview.scrollEditorWithPreview": true,  "markdown.preview.scrollPreviewWithEditor": true  },
+            "off": { "_label": "🟢on → off", "markdown.preview.doubleClickToSwitchToEditor": false, "markdown.preview.markEditorSelection": false, "markdown.preview.scrollEditorWithPreview": false, "markdown.preview.scrollPreviewWithEditor": false }
         },
         "Menu Bar": {
-            "on": {  "_label": "off → on", "window.menuBarVisibility": "visible" },
-            "off": { "_label": "on → off", "window.menuBarVisibility": "hidden"  }
+            "on": {  "_label": "off → on",  "window.menuBarVisibility": "visible" },
+            "off": { "_label": "🟢on → off", "window.menuBarVisibility": "hidden"  }
         },
     },
+    // Settings that are not changed from the default, but may be toggled by Settings-on-fire
+    "gitlens.codeLens.enabled": true,
+    "java.autobuild.enabled": true,
+    "cSpell.diagnosticLevel": "Information",
+    "gitlens.hovers.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.renderLineHighlight": "line",
+    "markdown-color-plus.currentHeaders.background.enabled": true,
+    "cSpell.enabled": true,
+    // #endregion SettingsOnFire
 
     "insert-unicode.favorites": {
         "directories": {
@@ -271,7 +320,8 @@
         "format-json-doc": [
             { "command": "changeLanguageMode.change", "args": "json" },
             { "command": "$delay", "args": { "delay": 50 } },
-            "editor.action.formatDocument"
+            "editor.action.formatDocument",
+            "cursorTop",
         ]
     },
 
@@ -311,10 +361,6 @@
                 {
                     "label": "$(references) Show References",
                     "command": "workbench.view.extension.references-view"
-                },
-                {
-                    "label": "$(file-code) Show OpenAPI",
-                    "command": "workbench.view.extension.openapi-explorer"
                 },
                 {
                     "label": "$(pass) Show Todos",
@@ -368,6 +414,11 @@
         "java-dev": {
             "placeHolder": "Java",
             "commands": [
+                {
+                    "label": "$(debug-rerun) Rerun Last Test",
+                    "description": "     (Ctrl+; L)",
+                    "command": "testing.reRunLastRun",
+                },
                 {
                     "label": "⇅  Organize Imports",
                     "description": "     (Shift+Alt+O)",
@@ -428,7 +479,7 @@
                 },
                 {
                     "label": "$(arrow-right) Go to References",
-                    "descriptions": "     (Shift+F12)",
+                    "description": "     (Shift+F12)",
                     "command": "editor.action.goToReferences"
                 },
             ]
@@ -536,52 +587,55 @@
                     "label": "␢  Toggle Show / Hide Whitespace Differences",
                     "command": "toggle.diff.ignoreTrimWhitespace"
                 },
-                // Open Diff (Staged)??
             ]
         },
         "git-palette": {
             "placeHolder": "Git",
+            "matchOnDescription": true,
             "commands": [
                 {
-                    "label": "Commit",
+                    "label": "$(git-commit) Commit",
                     "command": "workbench.action.tasks.runTask",
                     "commandArgs": [
                         "git commit"
                     ]
                 },
                 {
-                    "label": "Commit All",
+                    "label": "$(git-commit) Commit All",
                     "command": "workbench.action.tasks.runTask",
                     "commandArgs": [
-                        "git commit: all"
+                        "git commit-all"
                     ]
                 },
                 {
-                    "label": "Commit Amend",
+                    "label": "$(git-commit) Commit Amend",
                     "command": "workbench.action.tasks.runTask",
                     "commandArgs": [
-                        "git commit: amend"
+                        "git commit-amend"
                     ]
                 },
                 {
-                    "label": "Commit-w",
+                    "label": "$(window) Commit GUI",
+                    "description": "git gui",
                     "command": "workbench.action.tasks.runTask",
                     "commandArgs": [
-                        "git commit: commitw"
+                        "git commit-gui"
                     ]
                 },
                 {
-                    "label": "Log-w",
+                    "label": "$(window) Log GUI",
+                    "description": "gitk",
                     "command": "workbench.action.tasks.runTask",
                     "commandArgs": [
-                        "git logw"
+                        "git log-gui"
                     ]
                 },
                 {
-                    "label": "Log-w File",
+                    "label": "$(window) Log GUI (file) ",
+                    "description": "gitk ${file}",
                     "command": "workbench.action.tasks.runTask",
                     "commandArgs": [
-                        "git logw: ${file}"
+                        "git log-gui(file)"
                     ]
                 },
                 {
@@ -592,18 +646,20 @@
         }
     },
 
-    // Markdown Settings
-    "markdown-color-plus.currentHeaders.background.enabled": true, // no change from default, may be changed by Settings-on-fire
-    "markdown.preview.doubleClickToSwitchToEditor": false, // Disable by default, may be changed by Settings-on-fire
-    "markdown.preview.markEditorSelection": false, // Disable by default, may be changed by Settings-on-fire
-    "markdown.preview.scrollEditorWithPreview": false, // Disable by default, may be changed by Settings-on-fire
-    "markdown.preview.scrollPreviewWithEditor": false, // Disable by default, may be changed by Settings-on-fire
+    // #region Markdown Settings
+    "markdown.preview.doubleClickToSwitchToEditor": false, // Default to false, may be changed by Settings-on-fire
+    "markdown.preview.markEditorSelection": false, // Default to false, may be changed by Settings-on-fire
+    "markdown.preview.scrollEditorWithPreview": false, // Default to false, may be changed by Settings-on-fire
+    "markdown.preview.scrollPreviewWithEditor": false, // Default to false, may be changed by Settings-on-fire
     "markdown.extension.syntax.decorations": false,
     "markdown.extension.list.indentationSize": "inherit",
     "markdown.extension.tableFormatter.enabled": false,
     "markdown-table-formatter.enableSort": false,
+    // #endregion Markdown Settings
 
-    // Java settings
+    // #region Java settings
+    // #region Java Setup Examples
+    // ## Java Runtimes setup
     //   "java.configuration.runtimes": [ # JDKs available to build/run code
     //     {
     //       "name": "JavaSE-1.8",
@@ -611,7 +667,24 @@
     //     }
     //   ],
     //   "spring-boot.ls.java.home": "c:\\path\\to\\jdk" # JDK used by Spring Boot Language Server
+    // ## Lombok setup
+    //   // Requires lombok jar to be downloaded
+    //   "java.jdt.ls.vmargs": "DEFAULT_PARAMS -javaagent:\"/home/chris/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    //
+    // ## Jacoco setup
+    //   // Requires jacoco-agent jar to be setup.  Also requires jacoco report to be run after tests (See https://github.com/microsoft/vscode-java-test/issues/387#issuecomment-1126769444 for more info)
+    //   "java.test.config": [
+    //       {
+    //           "name": "jacoco",
+    //           "vmargs": ["-javaagent:/home/chris/.vscode/lombok-1.18.24.jar/org.jacoco.agent-0.8.8-runtime.jar=destfile=target/jacoco.exec,append=false"],
+    //       }
+    //   ],
+    //   "java.test.defaultConfig": "jacoco",
+    // #endregion Java Setup Examples
     "java.configuration.updateBuildConfiguration": "automatic",
+    "java.debug.settings.console": "internalConsole",
+    "java.referencesCodeLens.enabled": true, // Default to true, may be changed by Settings-on-fire
+    "java.implementationsCodeLens.enabled": true, // Default to true, may be changed by Settings-on-fire
     "java.test.report.showAfterExecution": "always",
     "java.completion.favoriteStaticMembers": [
         "java.text.MessageFormat.*", // Added
@@ -628,24 +701,40 @@
         "org.mockito.ArgumentMatchers.*",
         "org.mockito.Answers.*"
     ],
-    "java.debug.settings.stepping.skipClasses": [
-        "$JDK", // Added
-        "$Libraries", // Added
-        "java.lang.ClassLoader" // Added
-    ],
-    "java.referencesCodeLens.enabled": false, // Enable by default, may be changed by Settings-on-fire
-    "java.autobuild.enabled": true, // no change from default, may be changed by Settings-on-fire
+    "java.completion.filteredTypes": [
+        "java.awt.*",
+        "com.sun.*",
+        "sun.*",
+        "jdk.*",
+        "org.graalvm.*",
+        "io.micrometer.shaded.*",
 
-    // Lombok
-    // "java.jdt.ls.vmargs": "DEFAULT_PARAMS -javaagent:\"/home/chris/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+        "io.micrometer.core.instrument.util.StringUtils", // Added
+        "org.springframework.util.StringUtils", // Added
+        "org.springframework.util.ObjectUtils", // Added
+        "org.apache.tomcat.*", // Added
+    ],
+    "java.debug.settings.stepping.skipClasses": [
+        "$JDK",
+        // "$Libraries",
+        "java.lang.ClassLoader",
+        "org.springframework.aop.*",
+        "org.springframework.cglib.*",
+        "java.lang.reflect.*",
+        "java.lang.*"
+    ],
 
     // Maven Settings
     "java.import.gradle.enabled": false,
     "java.maven.downloadSources": true,
     "maven.terminal.favorites": [
         { "alias": "gen build dependency tree", "command": "dependency:tree -Dverbose -DoutputFile=maven-build-dependencies io.github.floverfelt:find-and-replace-maven-plugin:1.0:find-and-replace \"-DfindRegex=(\\\\+-|\\| |\\\\\\-)\" \"-DreplaceValue=  \" -DreplacementType=file-contents -DfileMask=maven-build-dependencies" },
-        { "alias": "gen plugin dependency tree", "command": "dependency:resolve-plugins -Dverbose -DoutputFile=maven-plugin-dependencies" }
+        { "alias": "gen plugin dependency tree", "command": "dependency:resolve-plugins -Dverbose -DoutputFile=maven-plugin-dependencies" },
     ],
+    "maven.view": "hierarchical",
+    // #endregion Java Settings
 
+    //////////////////////////////////////// Local Workstation Settings
     "update.mode": "default",
+
 }

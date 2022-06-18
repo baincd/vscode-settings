@@ -94,7 +94,7 @@
                                      "args": "markdown" },
 { "key": "ctrl+; j",              "command": "changeLanguageMode.change",
                                      "args": "json" },
-{ "key": "ctrl+; ctrl+shift+j",   "command": "macros.format-json-doc", },
+{ "key": "ctrl+; ctrl+shift+j",   "command": "macros.format-json-doc" },
 
 // Command Palettes
 { "key": "ctrl+alt+b",            "command": "baincd.mini-command-palettes.cmds.activity-bar-palette" },
@@ -104,5 +104,11 @@
 { "key": "ctrl+alt+g",            "command": "baincd.mini-command-palettes.cmds.git-palette" },
 { "key": "ctrl+alt+d",            "command": "workbench.action.debug.selectandstart" },
 { "key": "ctrl+alt+t",            "command": "workbench.action.tasks.runTask" },
+
+// Shortcuts to support Secondary Side Bar (https://code.visualstudio.com/updates/v1_64#_new-side-panel and https://code.visualstudio.com/updates/v1_66#_new-names-for-side-panel-and-side-bar)
+{ "key": "ctrl+f11",              "command": "workbench.action.toggleAuxiliaryBar" },
+{ "key": "ctrl+shift+f11",        "command": "workbench.action.customizeLayout" },
+
+//////////////////////////////////////// Local Workstation Keybindings
 
 ]
