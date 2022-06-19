@@ -156,11 +156,11 @@
     // #region Todo Tree Settings
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+\\.)[ \\t]|\\*\\*)[ \\t]*($TAGS)", // Add **, Fixes to default (Whitespace in pattern does not match newlines, escape '.', require whitespace after bullet/number in md lists)
     "todo-tree.general.tags": [
-        "CDBR>", "CDB-RVW>", // Added
-        "CDBR", "CDB-RVW", // Added
-        "??", "Q: ", // Added
-        "<<<<<<<", // Added
-        "System.out.println", "System.out.print", "System.err.println", "System.err.print", "log.debug(\"CDB ", "log.info(\"CDB ", "log.warn(\"CDB ", "console.log","debugger", // Added
+        "​CDB-REVIEWED", "CDBR>", "CDB-RVW>", // Added
+        "​CDB-REVIEW", "CDBR", "CDB-RVW", // Added
+        "​Qs", "??", "Q: ", // Added
+        "​conflict", "<<<<<<<", // Added
+        "​DEBUGGING", "System.out.println", "System.out.print", "System.err.println", "System.err.print", "log.debug(\"CDB ", "log.info(\"CDB ", "log.warn(\"CDB ", "console.log","debugger", // Added
         "CDB", "FIXME CDB", "TODO CDB", // Added
         "NEED", // Added
         "BUG",
@@ -178,11 +178,11 @@
     "todo-tree.general.tagGroups": {
         "[ ]": [ "[ ]", "[]" ],
         "CDB": [ "CDB", "FIXME CDB", "TODO CDB" ],
-        "CDB-REVIEWED" : [ "CDBR>", "CDB-RVW>", ],
-        "CDB-REVIEW": [ "CDBR", "CDB-RVW" ],
-        "Qs": [ "??", "Q:" ],
-        "conflict": ["<<<<<<<"],
-        "DEBUGGING": ["System.out.println", "System.out.print", "System.err.println", "System.err.print", "log.debug(\"CDB ", "log.info(\"CDB ", "log.warn(\"CDB ", "console.log","debugger", ]
+        "​CDB-REVIEWED" : [ "CDBR>", "CDB-RVW>", ],
+        "​CDB-REVIEW": [ "CDBR", "CDB-RVW" ],
+        "​Qs": [ "??", "Q:" ],
+        "​conflict": ["<<<<<<<"],
+        "​DEBUGGING": ["System.out.println", "System.out.print", "System.err.println", "System.err.print", "log.debug(\"CDB ", "log.info(\"CDB ", "log.warn(\"CDB ", "console.log","debugger", ]
     },
     "todo-tree.highlights.defaultHighlight": {
         "foreground": "#FFFFFF",
@@ -191,11 +191,11 @@
     },
     "todo-tree.highlights.customHighlight": {
         "CDB": { "icon": "bell", "background": "#A80000", "iconColour": "#A80000" },
-        "CDB-REVIEWED": { "icon": "code-review", "iconColour": "#e80000", "background": "#e80000", "foreground": "#F0F0F0" },
-        "CDB-REVIEW": { "icon": "code-review", "iconColour": "#D4AC0D", "background": "#F7DC6F", "foreground": "#424949" },
-        "Qs": { "icon": "question", "background": "#9900ff", "iconColour": "#9900ff" },
-        "conflict": { "icon": "git-pull-request", "background": "#ff7f00", "iconColour": "#ff7f01" },
-        "DEBUGGING": { "icon": "trash" },
+        "​CDB-REVIEWED": { "icon": "code-review", "iconColour": "#e80000", "background": "#e80000", "foreground": "#F0F0F0" },
+        "​CDB-REVIEW": { "icon": "code-review", "iconColour": "#D4AC0D", "background": "#F7DC6F", "foreground": "#424949" },
+        "​Qs": { "icon": "question", "background": "#9900ff", "iconColour": "#9900ff" },
+        "​conflict": { "icon": "git-pull-request", "background": "#ff7f00", "iconColour": "#ff7f01" },
+        "​DEBUGGING": { "icon": "trash" },
         "NEED": { "icon": "issue-opened" },
         "[x]": { "background": "#00CC0080", "icon": "check-circle-fill", "iconColour": "#00CC00" },
         "[>]": { "background": "#ebb800", "icon": "chevron-right", "iconColour": "#ebb800" },
