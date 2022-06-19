@@ -431,14 +431,31 @@
             "placeHolder": "dev",
             "commands": [
                 {
+                    "label": "$(debug-rerun) Rerun Last Test",
+                    "description": "     (Ctrl+; L)",
+                    "command": "testing.reRunLastRun",
+                },
+                {
                     "label": "⇅  Organize Imports",
                     "description": "     (Shift+Alt+O)",
                     "command": "editor.action.organizeImports"
                 },
                 {
-                    "label": "$(debug-rerun) Rerun Last Test",
-                    "description": "     (Ctrl+; L)",
-                    "command": "testing.reRunLastRun",
+                    "label": "$(tools) Source Action...",
+                    "command": "editor.action.sourceAction"
+                },
+                {
+                    "label": "$(wand) Refactor...",
+                    "description": "     (Ctrl+Shift+R)",
+                    "command": "editor.action.refactor"
+                },
+                {
+                    "label": "$(play) Maven: Favorites...",
+                    "description": "Java",
+                    "command": "maven.favorites",
+                    "showWhen": {
+                        "extensionEnabled": "vscjava.vscode-maven"
+                    }
                 },
                 {
                     "label": "$(symbol-event) Build Workspace",
