@@ -112,7 +112,8 @@
 
     // Preferred General Extensions Settings
     "cSpell.enableFiletypes": [
-        "git-rebase"
+        "git-rebase",
+        "shellscript"
     ],
     "coverage-gutters.showLineCoverage": true,
     "filterlines.createNewTab": false,
