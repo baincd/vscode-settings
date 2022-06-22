@@ -275,7 +275,7 @@
     // Settings that are not changed from the default, but may be toggled by Settings-on-fire
     "gitlens.codeLens.enabled": true,
     "editor.codeLens": true,
-    "diffEditor.codeLens": true,
+    "diffEditor.codeLens": false,
     "java.autobuild.enabled": true,
     "cSpell.diagnosticLevel": "Information",
     "gitlens.hovers.enabled": false,
