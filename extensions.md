@@ -8,7 +8,7 @@
 
 ## Must Haves
 - Mini Command Palettes: `baincd.mini-command-palettes`
-- Quick Settings: `edb.settings-on-fire`
+- Settings on 🔥!: `edb.settings-on-fire`
 - Todo Tree `gruntfuggly.todo-tree`
 - Printing: `pdconsec.vscode-print`
 - Insert Unicode: `brunnerh.insert-unicode`
