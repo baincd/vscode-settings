@@ -18,7 +18,7 @@
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "--norc", "-c" ]}, },
                 "command": "\"cd ./$(git rev-parse --show-cdup) && git commit\"",
             }
         },
@@ -36,7 +36,7 @@
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "--norc", "-c" ]}, },
                 "command": "\"cd ./$(git rev-parse --show-cdup) && git add -A && git commit\"",
             }
         },
@@ -54,7 +54,7 @@
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "--norc", "-c" ]}, },
                 "command": "\"cd ./$(git rev-parse --show-cdup) && git commit --amend\"",
             }
         },
@@ -75,7 +75,7 @@
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "--norc", "-c" ]}, },
             }
         },
         {
@@ -95,7 +95,7 @@
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "--norc", "-c" ]}, },
                 "command": "\"gitk -- ${fileBasename}\"",
             }
         },
@@ -116,7 +116,7 @@
             },
             "problemMatcher": [],
             "windows": {
-                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "-c" ]}, },
+                "options": {"shell": {"executable": "C:\\Program Files\\Git\\bin\\sh.exe", "args": [ "--norc", "-c" ]}, },
                 "command": "\"git gui\"",
             }
         },
