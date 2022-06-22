@@ -753,5 +753,6 @@
 
     //////////////////////////////////////// Local Workstation Settings
     "update.mode": "default",
+    "update.enableWindowsBackgroundUpdates": true,
 
 }
