@@ -1,7 +1,7 @@
 {
     "files.exclude": {
         "globalStorage": true,
-        "workspaceStorage": true,
-        "History": true
+        "History": true,
+        "workspaceStorage": true
     }
 }
