@@ -730,6 +730,8 @@
         "org.springframework.util.StringUtils", // Added
         "org.springframework.util.ObjectUtils", // Added
         "org.apache.tomcat.*", // Added
+        "lombok.var", // Added (no longer nec. in Java 10+)
+        "lombok.experimental.var", // Added (no longer nec. in Java 10+)
     ],
     "java.debug.settings.stepping.skipClasses": [
         "$JDK",
