@@ -245,10 +245,6 @@
             "on": {  "_label": "off → on",  "java.autobuild.enabled": false, },
             "off": { "_label": "🟢on → off", "java.autobuild.enabled": true,  }
         },
-        "Hide Spelling Errors from Problems View": {
-            "on": {  "_label": "off → on",  "cSpell.diagnosticLevel": "Hint",        },
-            "off": { "_label": "🟢on → off", "cSpell.diagnosticLevel": "Information", }
-        },
         "Enable Git Lens Hovers": {
             "on": {  "_label": "off → on",  "gitlens.hovers.enabled": true, },
             "off": { "_label": "🟢on → off", "gitlens.hovers.enabled": false, }
@@ -256,6 +252,10 @@
         "Screenshot Mode": {
             "on": {  "_label": "off → on",  "breadcrumbs.enabled": false, "editor.renderLineHighlight": "none", "markdown-color-plus.currentHeaders.background.enabled": false, "cSpell.enabled": false },
             "off": { "_label": "🟢on → off", "breadcrumbs.enabled": true,  "editor.renderLineHighlight": "line", "markdown-color-plus.currentHeaders.background.enabled": true,  "cSpell.enabled": true  }
+        },
+        "Hide Spelling Errors from Problems View": {
+            "on": {  "_label": "off → on",  "cSpell.diagnosticLevel": "Hint",        },
+            "off": { "_label": "🟢on → off", "cSpell.diagnosticLevel": "Information", }
         },
         "No EOF New Line": {
             "on": {  "_label": "off → on",  "files.insertFinalNewline": false  },
