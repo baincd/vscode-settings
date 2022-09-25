@@ -32,6 +32,15 @@
 
             // Color of filenames with warnings (differentiate from color of modified files "#e2c08d")
             "list.warningForeground": "#b79600", // Light Default = "#855f00", Dark Default = "#cca700"
+
+            // Modify Editor Inlay Hint colors to make less obtrusive
+            // Base on Light+ colors rather than QuietLight, as they are easier on the eyes
+            "editorInlayHint.background": "#c4c4c410", // Light+ Default: "#c4c4c44d", Quiet Light default: "#70569733"
+            "editorInlayHint.foreground": "#3333336c", // Light+ Default: "#333333cc", Quiet Light default: "#333333cc"
+            "editorInlayHint.parameterBackground": "#c4c4c420", // Light+ Default: "#c4c4c44d", Quiet Light default: "#70569733"
+            "editorInlayHint.parameterForeground": "#3333336c", // Light+ Default: "#333333cc", Quiet Light default: "#333333cc"
+            "editorInlayHint.typeBackground": "#c4c4c420", // Light+ Default: "#c4c4c44d", Quiet Light default: "#70569733"
+            "editorInlayHint.typeForeground": "#3333336c", // Light+ Default: "#333333cc", Quiet Light default: "#333333cc"
         }
     },
     "editor.tokenColorCustomizations": {
