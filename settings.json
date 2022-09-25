@@ -333,6 +333,11 @@
             { "command": "$delay", "args": { "delay": 50 } },
             "editor.action.formatDocument",
             "cursorTop",
+        ],
+        "fold-doc": [
+            "cursorTop",
+            "editor.foldRecursively",
+            "editor.unfold"
         ]
     },
 

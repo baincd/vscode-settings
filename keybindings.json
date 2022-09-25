@@ -95,6 +95,7 @@
 { "key": "ctrl+; j",              "command": "changeLanguageMode.change",
                                      "args": "json" },
 { "key": "ctrl+; ctrl+shift+j",   "command": "macros.format-json-doc" },
+{ "key": "ctrl+; ctrl+[",         "command": "macros.fold-doc" },
 
 // Command Palettes
 { "key": "ctrl+alt+b",            "command": "baincd.mini-command-palettes.cmds.activity-bar-palette" },
