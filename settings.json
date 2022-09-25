@@ -763,6 +763,7 @@
         "org.springframework.aop.*",
         "org.springframework.cglib.*",
         "java.lang.reflect.*",
+        "java.lang.instrument.*",
         "java.lang.*"
     ],
 
