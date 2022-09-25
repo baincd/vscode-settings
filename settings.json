@@ -748,6 +748,14 @@
         "lombok.var", // Added (no longer nec. in Java 10+)
         "lombok.experimental.var", // Added (no longer nec. in Java 10+)
     ],
+    "java.inlayHints.parameterNames.exclusions": [
+        "org.slf4j.LoggerFactory.getLogger(clazz)",
+        "java.text.MessageFormat.format(pattern,arguments)",
+        "java.io.PrintStream.print*(x)",
+        "java.util.List.get(index)",
+        "java.util.Arrays.asList(a)",
+        "(expected*)"
+    ],
     "java.debug.settings.stepping.skipClasses": [
         "$JDK",
         // "$Libraries",
