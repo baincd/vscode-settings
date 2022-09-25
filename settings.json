@@ -71,7 +71,6 @@
     "screencastMode.onlyKeyboardShortcuts": true,
     "liveshare.showInStatusBar": "whileCollaborating",
     "workbench.editor.autoLockGroups": {
-        "workbench.input.interactive": true,
         "interactive": true,
         "workbench.editorinputs.searchEditorInput": true,
         "vscode.markdown.preview.editor": true,
