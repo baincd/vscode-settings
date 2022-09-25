@@ -483,9 +483,10 @@
                 {
                     "label": "$(close) Clean Java Language Server Workspace",
                     "description": "java",
-                    "command": "java.project.clean.workspace",
+                    "command": "java.clean.workspace",
+                    "commandArgs": [true],
                     "showWhen": {
-                        "extensionEnabled": "vscjava.vscode-java-dependency"
+                        "extensionEnabled": "redhat.java"
                     }
                 },
                 {
