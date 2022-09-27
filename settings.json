@@ -212,7 +212,7 @@
         "[>>]": { "background": "#8b0000", "icon": "arrow-right", "iconColour": "#8b0000" },
     },
     "todo-tree.general.statusBar": "tags",
-    "todo-tree.tree.labelFormat": "${filename}:${line} ${tag}${after}",
+    "todo-tree.tree.labelFormat": "${filename}:${line} [${tag}] ${after}",
     "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
     // #endregion
 
