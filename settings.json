@@ -704,9 +704,6 @@
     //     }
     //   ],
     //   "spring-boot.ls.java.home": "c:\\path\\to\\jdk" # JDK used by Spring Boot Language Server
-    // ## Lombok setup
-    //   // Requires lombok jar to be downloaded
-    //   "java.jdt.ls.vmargs": "DEFAULT_PARAMS -javaagent:\"/home/chris/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
     //
     // ## Jacoco setup
     //   // Requires jacoco-agent jar to be setup.  Also requires jacoco report to be run after tests (See https://github.com/microsoft/vscode-java-test/issues/387#issuecomment-1126769444 for more info)
