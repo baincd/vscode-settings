@@ -708,6 +708,9 @@
     "markdown.extension.list.indentationSize": "inherit",
     "markdown.extension.tableFormatter.enabled": false,
     "markdown-table-formatter.enableSort": false,
+    "[markdown]": {
+        "editor.tabSize": 2
+    },
     // #endregion Markdown Settings
 
     // #region Java settings
