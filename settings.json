@@ -716,13 +716,12 @@
     // #region Java settings
     // #region Java Setup Examples
     // ## Java Runtimes setup
-    //   "java.configuration.runtimes": [ # JDKs available to build/run code
+    //   "java.configuration.runtimes": [ // JDKs available to build/run code
     //     {
     //       "name": "JavaSE-1.8",
     //       "path": "c:\\path\\to\\jdk"
     //     }
     //   ],
-    //   "spring-boot.ls.java.home": "c:\\path\\to\\jdk" # JDK used by Spring Boot Language Server
     //
     // ## Jacoco setup
     //   // Requires jacoco-agent jar to be setup.  Also requires jacoco report to be run after tests (See https://github.com/microsoft/vscode-java-test/issues/387#issuecomment-1126769444 for more info)
