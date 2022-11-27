@@ -699,7 +699,12 @@
     "markdown.preview.markEditorSelection": false, // Default to false, may be changed by Settings-on-fire
     "markdown.preview.scrollEditorWithPreview": false, // Default to false, may be changed by Settings-on-fire
     "markdown.preview.scrollPreviewWithEditor": false, // Default to false, may be changed by Settings-on-fire
-    "markdown.extension.syntax.decorations": false,
+    "markdown.extension.theming.decoration.renderCodeSpan": false,
+    "markdown.extension.theming.decoration.renderHardLineBreak": false,
+    "markdown.extension.theming.decoration.renderLink": false,
+    "markdown.extension.theming.decoration.renderParagraph": false,
+    "markdown.extension.theming.decoration.renderStrikethrough": false,
+    "markdown.extension.theming.decoration.renderTrailingSpace": false,
     "markdown.extension.list.indentationSize": "inherit",
     "markdown.extension.tableFormatter.enabled": false,
     "markdown-table-formatter.enableSort": false,
