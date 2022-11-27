@@ -1,5 +1,5 @@
 {
-    // Preferred Theme
+    // #region UI Theme
     "workbench.colorTheme": "Quiet Light", // Default to "Quiet Light", may be changed by Settings-on-fire
     "workbench.colorCustomizations": {
         "[Quiet Light]": {
@@ -51,8 +51,9 @@
 
     },
     "workbench.iconTheme": "vscode-icons",
+    // #endregion
 
-    // Preferred UI settings
+    // #region UI Settings
     "window.title": "${rootName}${separator}${dirty}${activeEditorShort}",  // Default: "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
     "window.menuBarVisibility": "hidden", // Default to "hidden", may be changed by Settings-on-fire
     "workbench.activityBar.visible": false,
@@ -77,8 +78,9 @@
         "mainThreadWebview-markdown.preview": true
     },
     "workbench.layoutControl.enabled": false,
+    // #endregion
 
-    // Preferred Editor Settings
+    // #region Editor Settings
     "editor.linkedEditing": true, // Depending on the language, related symbols, e.g. HTML tags, are updated while editing.
     "editor.copyWithSyntaxHighlighting": false,
     "editor.emptySelectionClipboard": false,
@@ -91,8 +93,9 @@
     "workbench.editorAssociations": {
         "git-rebase-todo": "default"
     },
+    // #endregion
 
-    // Preferred Terminal Settings
+    // #region Terminal Settings
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.profiles.windows": {
@@ -118,8 +121,9 @@
         "baincd.mini-command-palettes.cmds.git-palette",
         "workbench.action.debug.selectandstart",
     ],
+    // #endregion
 
-    // Preferred General Extensions Settings
+    // #region Misc Extensions Settings
     "cSpell.enableFiletypes": [
         "git-rebase",
         "shellscript"
@@ -162,8 +166,9 @@
     "highlight.regexes": {
         "~~DISABLE DEFAULT HIGHLIGHT REGEXES~~": {}
     },
+    // #endregion
 
-    // #region Todo Tree Settings
+    // #region Todo Tree Extension Settings
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+\\.)[ \\t]|\\*\\*)[ \\t]*($TAGS)", // Add **, Fixes to default (Whitespace in pattern does not match newlines, escape '.', require whitespace after bullet/number in md lists)
     "todo-tree.general.tags": [
         "​CDB-REVIEWED", "CDBR>", "CDB-RVW>", // Added
@@ -216,7 +221,7 @@
     "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
     // #endregion
 
-    // #region SettingsOnFire
+    // #region SettingsOnFire Extension Settings
     "settingsOnFire.toggle": {
         "Theme": {
             "on": {  "_label": "light → dark", "workbench.colorTheme": "Default Dark+" },
@@ -299,6 +304,7 @@
     "cSpell.enabled": true,
     // #endregion SettingsOnFire
 
+    // #region Insert Unicode Extension Settings
     "insert-unicode.favorites": {
         "directories": {
             "1-Symbols": {
@@ -340,7 +346,9 @@
         },
         "items": []
     },
+    // #endregion
 
+    // #region Macros Extension Settings
     "macros.list": {
         "format-json-doc": [
             { "command": "changeLanguageMode.change", "args": "json" },
@@ -354,7 +362,9 @@
             "editor.unfold"
         ]
     },
+    // #endregion
 
+    // #region Mini Command Palette Extension Sections
     "baincd.mini-command-palettes.paletteConfigs": {
         "activity-bar-palette": {
             "placeHolder": "Activity Bar",
@@ -682,6 +692,7 @@
             ]
         }
     },
+    // #endregion
 
     // #region Markdown Settings
     "markdown.preview.doubleClickToSwitchToEditor": false, // Default to false, may be changed by Settings-on-fire
