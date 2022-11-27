@@ -774,7 +774,9 @@
         "java.io.PrintStream.print*(x)",
         "java.util.List.get(index)",
         "java.util.Arrays.asList(a)",
-        "(expected*)"
+        "org.slf4j.Logger.*(msg)",
+        "(expected*)",
+        "(key)"
     ],
     "java.debug.settings.stepping.skipClasses": [
         "$JDK",
