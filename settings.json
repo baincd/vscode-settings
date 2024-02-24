@@ -150,6 +150,7 @@
     "print.lineNumbers": "off",
     "pdf-preview.default.cursor": "hand",
     "vsicons.dontShowNewVersionMessage": true,
+    "xml.format.maxLineWidth": 0,
 
     "custom-auto-fold.rules": [
         {
