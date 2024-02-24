@@ -85,7 +85,7 @@
     "editor.emptySelectionClipboard": false,
     "files.insertFinalNewline": true, // Default to true, may be changed by Settings-on-fire
     "editor.comments.ignoreEmptyLines": false,
-    "explorer.autoReveal": false, // Default to false, may be changed by Settings-on-fire
+    "explorer.autoReveal": false,
     "files.associations": {
         "*.md.txt": "markdown",
     },
@@ -275,10 +275,6 @@
             "on": {  "_label": "off → on",  "files.insertFinalNewline": false  },
             "off": { "_label": "🟢on → off", "files.insertFinalNewline": true   }
         },
-        "Sync Explorer with Active Editor": {
-            "on": {  "_label": "off → on",  "explorer.autoReveal": true,  },
-            "off": { "_label": "🟢on → off", "explorer.autoReveal": false, }
-        },
         "Debug Console: Word Wrap": {
             "on": {  "_label": "off → on",  "debug.console.wordWrap": true  },
             "off": { "_label": "🟢on → off", "debug.console.wordWrap": false }
@@ -390,6 +386,30 @@
                         "value": 1
                     }
                 }
+            ]
+        },
+        "commands.custom.showActiveFileInExplorer": {
+            "sequence": [
+                {
+                    "command": "commands.toggleSetting",
+                    "args": {
+                        "setting": "explorer.autoReveal",
+                        "value": [true]
+                    }
+                },
+                {
+                    "command": "workbench.view.search" // If the explorer view was already open this doesn't work, so move to a different view first
+                },
+                {
+                    "command": "workbench.explorer.fileView.focus"
+                },
+                {
+                    "command": "commands.toggleSetting",
+                    "args": {
+                        "setting": "explorer.autoReveal",
+                        "value": [false]
+                    }
+                },
             ]
         }
     },
