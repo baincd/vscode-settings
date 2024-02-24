@@ -42,6 +42,10 @@
 			"\t${0:// TODO: Implement ${1:test} }",
 			"}",
 		]
+	},
+	"Quick Log": {
+		"prefix": "quick log",
+		"body": "org.slf4j.LoggerFactory.getLogger($TM_FILENAME_BASE.class).${1:debug}(\"$0\");"
 	}
 }
 
