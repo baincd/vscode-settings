@@ -1,0 +1,57 @@
+{
+    "recommendations": [
+        // # Base Functionality
+
+        // ## Core
+        "streetsidesoftware.code-spell-checker", // Spell Check
+        "sleistner.vscode-fileutils", // File Utils
+        "vscode-icons-team.vscode-icons", // vscode-icons
+        // /*IF PRINTING IS NEEDED*/ "pdconsec.vscode-print", // Printing
+
+        // ## General Awesomeness
+        "edb.settings-on-fire", // Settings on 🔥!
+        "baincd.mini-command-palettes", // Mini Command Palettes
+        "Tyriar.vscode-terminal-here", // Terminal Here
+        "usernamehw.change-language-mode", // Change Language Mode
+        "ctf0.macros", // Macros (fork of geddski.macros)
+        // /*WINDOWS ONLY*/ "baincd.copy-path-unixstyle", // Copy Path (Unix Style)
+
+        // ## Awesome Text Editor
+        "earshinov.filter-lines", // Filter Lines (grep command)
+        "jianbingfang.dupchecker", // DupChecker (uniq command)
+        "brunnerh.insert-unicode", // Insert Unicode
+        "gruntfuggly.todo-tree", // Todo Tree
+
+        // -----------------------
+        // # Various Functionality
+
+        // ## Awesome IDE
+        // "eamodio.gitlens", // GitLens — Git supercharged
+        // "ryanluker.vscode-coverage-gutters", // Coverage Gutters
+        // "baincd.custom-auto-fold", // Custom Auto Fold
+
+        // ## Diff Files
+        // "baincd.diff-lang-folding", // Diff Folding
+        // "baincd.diff-lang-colorizer", // Diff Colors
+
+        // ## Markdown
+        // "baincd.markdown-color-plus", // Markdown Colors
+        // "fcrespo82.markdown-table-formatter", // Markdown Table Formatter
+        // "yzhang.markdown-all-in-one", // Markdown All in One
+        // "RLNT.keep-a-changelog", // Keep a Changelog
+
+        // ## Java
+        // "baincd.java-class-imports-folding", // Java Class Imports Folding
+        // "baincd.maven-log-folding-and-colors", // Maven Log Folding
+
+        // ## Bash
+        // "Remisa.shellman", // shellman
+        // "mads-hartmann.bash-ide-vscode", // Bash IDE
+
+        // # Other Useful Extensions
+        // "hediet.vscode-drawio", // Draw.io Integration
+        // "drmerfy.overtype", // Overtype
+        // "mehyaa.workspace-storage-cleanup", // Workspace Storage Cleanup
+        // "tomoki1207.pdf", // PDF Preview
+    ]
+}
