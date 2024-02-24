@@ -17,6 +17,8 @@
         // /*WINDOWS ONLY*/ "baincd.copy-path-unixstyle", // Copy Path (Unix Style)
 
         // ## Awesome Text Editor
+        "ryu1kn.partial-diff", // Partial Diff
+        "yo1dog.cursor-align", // Cursor Align
         "earshinov.filter-lines", // Filter Lines (grep command)
         "jianbingfang.dupchecker", // DupChecker (uniq command)
         "brunnerh.insert-unicode", // Insert Unicode
@@ -27,6 +29,8 @@
 
         // ## Awesome IDE
         // "eamodio.gitlens", // GitLens — Git supercharged
+        // "alefragnani.Bookmarks", // Bookmarks
+        // "usernamehw.errorlens", // Error Lens
         // "ryanluker.vscode-coverage-gutters", // Coverage Gutters
         // "baincd.custom-auto-fold", // Custom Auto Fold
 
@@ -40,6 +44,15 @@
         // "yzhang.markdown-all-in-one", // Markdown All in One
         // "RLNT.keep-a-changelog", // Keep a Changelog
 
+        // ## JSON
+        // "Thinker.sort-json", // Sort Json
+
+        // ## YAML
+        // "redhat.vscode-yaml", // YAML
+
+        // ## XML
+        // "redhat.vscode-xml", // XML
+
         // ## Java
         // "baincd.java-class-imports-folding", // Java Class Imports Folding
         // "baincd.maven-log-folding-and-colors", // Maven Log Folding
@@ -50,6 +63,7 @@
 
         // # Other Useful Extensions
         // "hediet.vscode-drawio", // Draw.io Integration
+        // "humao.rest-client", // REST Client
         // "drmerfy.overtype", // Overtype
         // "mehyaa.workspace-storage-cleanup", // Workspace Storage Cleanup
         // "tomoki1207.pdf", // PDF Preview
