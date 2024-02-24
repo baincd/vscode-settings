@@ -56,13 +56,13 @@
     // #region UI Settings
     "window.title": "${rootName}${separator}${dirty}${activeEditorShort}",  // Default: "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
     "window.menuBarVisibility": "hidden", // Default to "hidden", may be changed by Settings-on-fire
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.location": "hidden",
     "editor.minimap.enabled": false,
     "workbench.tree.indent": 20,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.languageDetection": false,
     "workbench.editor.preferHistoryBasedLanguageDetection": true,
-    "workbench.editor.untitled.hint": "hidden",
+    "workbench.editor.empty.hint": "hidden",
     "workbench.editor.revealIfOpen": true,
     "debug.console.wordWrap": false, // Default to false, may be changed by Settings-on-fire
     "debug.console.collapseIdenticalLines": false, // Default to false, may be changed by Settings-on-fire
