@@ -15,7 +15,7 @@
 { "key": "ctrl+]",                "command": "-editor.action.indentLines",
                                      "when": "editorTextFocus && !editorReadonly" },
 
-{ "key": "ctrl+alt+\\",           "command": "workbench.files.action.showActiveFileInExplorer" },
+{ "key": "ctrl+shift+\\",           "command": "workbench.files.action.showActiveFileInExplorer" },
 
 // Duplicate ctrl+k ctrl+f
 { "key": "ctrl+alt+f",            "command": "editor.action.formatSelection",
