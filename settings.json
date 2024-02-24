@@ -744,6 +744,7 @@
     "java.debug.settings.console": "internalConsole",
     "java.referencesCodeLens.enabled": true, // Default to true, may be changed by Settings-on-fire
     "java.implementationsCodeLens.enabled": true, // Default to true, may be changed by Settings-on-fire
+    "java.compile.nullAnalysis.mode": "automatic",
     "java.test.report.showAfterExecution": "always",
     "java.completion.favoriteStaticMembers": [
         "java.text.MessageFormat.*", // Added
