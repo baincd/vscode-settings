@@ -113,6 +113,7 @@
         "workbench.action.quickOpenTerm",
         "workbench.action.toggleAuxiliaryBar",
         "workbench.action.customizeLayout",
+        "workbench.action.terminal.rename",
 
         "baincd.mini-command-palettes.cmds.activity-bar-palette",
         "baincd.mini-command-palettes.cmds.panel-palette",

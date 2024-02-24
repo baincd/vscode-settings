@@ -117,6 +117,8 @@
 { "key": "ctrl+b",                "command": "markdown.extension.editing.toggleBold",
                                      "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/ && editorHasSelection" },
 
+{ "key": "f2",                    "command": "workbench.action.terminal.rename",
+                                     "when": "terminalFocus" },
 //////////////////////////////////////// Local Workstation Keybindings
 
 ]
