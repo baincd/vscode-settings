@@ -124,6 +124,10 @@
     ],
     // #endregion
 
+    // #region Debugging Settings
+    "debug.autoExpandLazyVariables": true,
+    // #endregion
+
     // #region Misc Extensions Settings
     "cSpell.enableFiletypes": [
         "git-rebase",
