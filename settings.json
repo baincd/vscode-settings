@@ -788,6 +788,8 @@
         "java.lang.ClassLoader",
         "org.springframework.aop.*",
         "org.springframework.cglib.*",
+        "org.springframework.util.ClassUtils",
+        "org.springframework.core.BridgeMethodResolver",
         "java.lang.reflect.*",
         "java.lang.instrument.*",
         "java.lang.*"
