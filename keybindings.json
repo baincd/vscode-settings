@@ -68,7 +68,6 @@
 // ctrl+q on Linux duplicates Windows behavior
 { "key": "ctrl+q",                "command": "-workbench.action.quit" },
 { "key": "ctrl+q",                "command": "workbench.action.quickOpenView" },
-{ "key": "ctrl+q",                "command": "workbench.action.quickOpenView" },
 { "key": "ctrl+q",                "command": "workbench.action.quickOpenNavigateNextInViewPicker",
                                      "when": "inQuickOpen && inViewsPicker" },
 { "key": "ctrl+shift+q",          "command": "workbench.action.quickOpenNavigatePreviousInViewPicker",
