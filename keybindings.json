@@ -119,6 +119,10 @@
 
 { "key": "f2",                    "command": "workbench.action.terminal.rename",
                                      "when": "terminalFocus" },
+{ "key": "ctrl+; tab",            "command": "type",
+                                     "args": { "text": "\t" },
+                                     "when": "editorTextFocus" }
+
 //////////////////////////////////////// Local Workstation Keybindings
 
 ]
