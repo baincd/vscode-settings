@@ -355,19 +355,43 @@
     },
     // #endregion
 
-    // #region Macros Extension Settings
-    "macros.list": {
-        "format-json-doc": [
-            { "command": "changeLanguageMode.change", "args": "json" },
-            { "command": "$delay", "args": { "delay": 50 } },
-            "editor.action.formatDocument",
-            "cursorTop",
-        ],
-        "fold-doc": [
-            "cursorTop",
-            "editor.foldRecursively",
-            "editor.unfold"
-        ]
+    // #region Commands Extension Settings
+    "commands.commands": {
+        "commands.custom.format-json-doc": {
+
+            "sequence": [
+                {
+                    "command": "commands.setEditorLanguage",
+                    "args": "json"
+                },
+                {
+                    "delay": 100,
+                    "command": "editor.action.formatDocument"
+                },
+                {
+                    "command": "cursorTop"
+                }
+            ]
+        },
+        "commands.custom.fold-doc": {
+            "sequence": [
+                {
+                    "command": "cursorTop"
+                },
+                {
+                    "command": "editor.foldRecursively",
+                },
+                {
+//                     "command": "editor.unfold"
+                    "command": "cursorMove",
+                    "args": {
+                        "to": "down",
+                        "by": "line",
+                        "value": 1
+                    }
+                }
+            ]
+        }
     },
     // #endregion
 

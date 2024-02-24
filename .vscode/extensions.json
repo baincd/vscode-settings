@@ -12,8 +12,7 @@
         "edb.settings-on-fire", // Settings on 🔥!
         "baincd.mini-command-palettes", // Mini Command Palettes
         "Tyriar.vscode-terminal-here", // Terminal Here
-        "usernamehw.change-language-mode", // Change Language Mode
-        "ctf0.macros", // Macros (fork of geddski.macros)
+        "usernamehw.commands", // Commands
         // /*WINDOWS ONLY*/ "baincd.copy-path-unixstyle", // Copy Path (Unix Style)
 
         // ## Awesome Text Editor

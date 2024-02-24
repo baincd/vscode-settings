@@ -89,13 +89,13 @@
 { "key": "ctrl+k ctrl+shift+p",   "command": "workbench.action.showAllEditorsByMostRecentlyUsed" },
 { "key": "ctrl+; ctrl+q",         "command": "workbench.action.openView" },
 
-// Change Language Mode shortcuts (require `usernamehw.change-language-mode` and `ctf0.macros`)
-{ "key": "ctrl+; m",              "command": "changeLanguageMode.change",
+// Change Language Mode shortcuts (require `usernamehw.commands`)
+{ "key": "ctrl+; m",              "command": "commands.setEditorLanguage",
                                      "args": "markdown" },
-{ "key": "ctrl+; j",              "command": "changeLanguageMode.change",
+{ "key": "ctrl+; j",              "command": "commands.setEditorLanguage",
                                      "args": "json" },
-{ "key": "ctrl+; ctrl+shift+j",   "command": "macros.format-json-doc" },
-{ "key": "ctrl+; ctrl+[",         "command": "macros.fold-doc" },
+{ "key": "ctrl+; ctrl+shift+j",   "command": "commands.custom.format-json-doc" },
+{ "key": "ctrl+; ctrl+[",         "command": "commands.custom.fold-doc" },
 
 // Command Palettes
 { "key": "ctrl+alt+b",            "command": "baincd.mini-command-palettes.cmds.activity-bar-palette" },
