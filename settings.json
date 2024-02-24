@@ -149,6 +149,7 @@
     "print.browserPath": "/usr/bin/google-chrome-stable --incognito",
     "print.lineNumbers": "off",
     "pdf-preview.default.cursor": "hand",
+    "vsicons.dontShowNewVersionMessage": true,
 
     "custom-auto-fold.rules": [
         {
