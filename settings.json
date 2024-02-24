@@ -55,7 +55,7 @@
 
     // #region UI Settings
     "window.title": "${rootName}${separator}${dirty}${activeEditorShort}",  // Default: "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
-    "window.menuBarVisibility": "hidden", // Default to "hidden", may be changed by Settings-on-fire
+    "window.menuBarVisibility": "hidden",
     "workbench.activityBar.location": "hidden",
     "editor.minimap.enabled": false,
     "workbench.tree.indent": 20,
@@ -286,10 +286,6 @@
         "Markdown: Sync editor and preview": {
             "on": {  "_label": "off → on",  "markdown.preview.doubleClickToSwitchToEditor": true,  "markdown.preview.markEditorSelection": true,  "markdown.preview.scrollEditorWithPreview": true,  "markdown.preview.scrollPreviewWithEditor": true  },
             "off": { "_label": "🟢on → off", "markdown.preview.doubleClickToSwitchToEditor": false, "markdown.preview.markEditorSelection": false, "markdown.preview.scrollEditorWithPreview": false, "markdown.preview.scrollPreviewWithEditor": false }
-        },
-        "Menu Bar": {
-            "on": {  "_label": "off → on",  "window.menuBarVisibility": "visible" },
-            "off": { "_label": "🟢on → off", "window.menuBarVisibility": "hidden"  }
         },
     },
     // Settings that are not changed from the default, but may be toggled by Settings-on-fire
