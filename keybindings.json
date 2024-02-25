@@ -87,9 +87,9 @@
 
 // Markdown All in One Exception - limit ctrl+b shortcut to only when text is selected
 { "key": "ctrl+b",                "command": "-markdown.extension.editing.toggleBold",
-                                     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/" },
+                                     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/" },
 { "key": "ctrl+b",                "command": "markdown.extension.editing.toggleBold",
-                                     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/ && editorHasSelection" },
+                                     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/ && editorHasSelection" },
 
 { "key": "f2",                    "command": "workbench.action.terminal.rename",
                                      "when": "terminalFocus" },
