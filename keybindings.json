@@ -95,7 +95,8 @@
                                      "when": "terminalFocus" },
 { "key": "ctrl+; tab",            "command": "type",
                                      "args": { "text": "\t" },
-                                     "when": "editorTextFocus" }
+                                     "when": "editorTextFocus" },
+{ "key": "ctrl+; space",          "command": "my-cheatsheet.showCheatsheetToSide" },
 
 //////////////////////////////////////// Local Workstation Keybindings
 
