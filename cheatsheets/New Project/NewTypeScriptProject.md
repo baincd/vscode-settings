@@ -13,14 +13,17 @@ git add -A && git commit -m 'Add TypeScript' &&
 
 npm pkg set 'type=module' &&
 npm pkg set scripts.start="tsc-watch --onsuccess 'node dist/index.js'" &&
-echo '{'                                 > tsconfig.json &&
-echo '    "compilerOptions": {'         >> tsconfig.json &&
-echo '        "outDir": "./dist",'      >> tsconfig.json &&
-echo '        "rootDir": "./src",'      >> tsconfig.json &&
-echo '        "target": "ES6",'         >> tsconfig.json &&
-echo '        "module": "Node16"'       >> tsconfig.json &&
-echo '    }'                            >> tsconfig.json &&
-echo '}'                                >> tsconfig.json &&
+echo '{'                                     > tsconfig.json &&
+echo '    "compilerOptions": {'             >> tsconfig.json &&
+echo '        "outDir": "./dist",'          >> tsconfig.json &&
+echo '        "rootDir": "./src",'          >> tsconfig.json &&
+echo '        "target": "ES6",'             >> tsconfig.json &&
+echo '        "module": "Node16",'          >> tsconfig.json &&
+echo ''                                     >> tsconfig.json &&
+echo '        "noImplicitReturns": true,'   >> tsconfig.json &&
+echo '        "noUnusedParameters": true,'  >> tsconfig.json &&
+echo '    }'                                >> tsconfig.json &&
+echo '}'                                    >> tsconfig.json &&
 git add -A && git commit -m 'Configure TypeScript' &&
 
 mkdir src &&
