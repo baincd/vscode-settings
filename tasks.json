@@ -5,6 +5,22 @@
     // cd ./$(git rev-parse --show-cdup) => cd to root of git repo
     "tasks": [
         {
+            "label": "Create New draw.io file",
+            "type": "shell",
+            // v1: Create blank drawio.pdf image into workspace
+            // "command": "TODAY=`date +%Y-%m-%d` COUNT=`ls ${TODAY}_Whiteboard-*.drawio.png | wc -l` bash -c 'touch ${TODAY}_Whiteboard-${COUNT}.drawio.png && code ${TODAY}_Whiteboard-${COUNT}.drawio.png'",
+            // v2: Copy drawio.pdf template into into workspace
+            // "command": "TODAY=`date +%Y-%m-%d` COUNT=`ls ${TODAY}_Whiteboard-*.drawio.png | wc -l` bash -c 'cp /home/chris/WhiteboardTemplate.drawio.png ${TODAY}_Whiteboard-${COUNT}.drawio.png && code ${TODAY}_Whiteboard-${COUNT}.drawio.png'",
+            // v3: Copy drawio.pdf template into into workspace (if no workspace, cwd defaults to $HOME.  In this case, copy template to /home/chris/whiteboards
+            "command": "[[ \"$PWD\" != \"/home/chris\" ]] || cd '/home/chris/whiteboards'; TODAY=`date +%Y-%m-%d` COUNT=`ls ${TODAY}_Whiteboard-*.drawio.png | wc -l` bash -c 'cp /home/chris/WhiteboardTemplate.drawio.png ${TODAY}_Whiteboard-${COUNT}.drawio.png && code -a ${TODAY}_Whiteboard-${COUNT}.drawio.png'",
+            "isBackground": false,   
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "problemMatcher": []
+        },        
+        {
             "label": "git commit",
             "detail": "Commit staged changes",
             "type": "shell",
