@@ -854,5 +854,8 @@
     //////////////////////////////////////// Local Workstation Settings
     "update.mode": "default",
     "update.enableWindowsBackgroundUpdates": true,
+    "diffEditor.renderSideBySide": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
 
 }
