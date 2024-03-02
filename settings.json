@@ -777,6 +777,7 @@
     //       {
     //           "name": "jacoco",
     //           "vmargs": ["-javaagent:/home/chris/.vscode/lombok-1.18.24.jar/org.jacoco.agent-0.8.8-runtime.jar=destfile=target/jacoco.exec,append=false"],
+    //           "postDebugTask": "Jacoco Report" // Create Task for Jacoco Report
     //       }
     //   ],
     //   "java.test.defaultConfig": "jacoco",
