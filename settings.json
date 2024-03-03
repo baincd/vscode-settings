@@ -298,10 +298,6 @@
             "on": {  "_label": "off → on",  "debug.console.collapseIdenticalLines": true  },
             "off": { "_label": "🟢on → off", "debug.console.collapseIdenticalLines": false }
         },
-        "Markdown: Sync editor and preview": {
-            "on": {  "_label": "off → on",  "markdown.preview.doubleClickToSwitchToEditor": true,  "markdown.preview.markEditorSelection": true,  "markdown.preview.scrollEditorWithPreview": true,  "markdown.preview.scrollPreviewWithEditor": true  },
-            "off": { "_label": "🟢on → off", "markdown.preview.doubleClickToSwitchToEditor": false, "markdown.preview.markEditorSelection": false, "markdown.preview.scrollEditorWithPreview": false, "markdown.preview.scrollPreviewWithEditor": false }
-        },
     },
     // Settings that are not changed from the default, but may be toggled by Settings-on-fire
     "gitlens.codeLens.enabled": true,
@@ -758,10 +754,8 @@
     // #endregion
 
     // #region Markdown Settings
-    "markdown.preview.doubleClickToSwitchToEditor": false, // Default to false, may be changed by Settings-on-fire
-    "markdown.preview.markEditorSelection": false, // Default to false, may be changed by Settings-on-fire
-    "markdown.preview.scrollEditorWithPreview": false, // Default to false, may be changed by Settings-on-fire
-    "markdown.preview.scrollPreviewWithEditor": false, // Default to false, may be changed by Settings-on-fire
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "markdown.preview.markEditorSelection": false,
     "markdown.extension.theming.decoration.renderCodeSpan": false,
     "markdown.extension.theming.decoration.renderHardLineBreak": false,
     "markdown.extension.theming.decoration.renderLink": false,
