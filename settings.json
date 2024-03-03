@@ -290,14 +290,6 @@
             "on": {  "_label": "off → on",  "files.insertFinalNewline": false  },
             "off": { "_label": "🟢on → off", "files.insertFinalNewline": true   }
         },
-        "Debug Console: Word Wrap": {
-            "on": {  "_label": "off → on",  "debug.console.wordWrap": true  },
-            "off": { "_label": "🟢on → off", "debug.console.wordWrap": false }
-        },
-        "Debug Console: Collapse Identical Lines": {
-            "on": {  "_label": "off → on",  "debug.console.collapseIdenticalLines": true  },
-            "off": { "_label": "🟢on → off", "debug.console.collapseIdenticalLines": false }
-        },
     },
     // Settings that are not changed from the default, but may be toggled by Settings-on-fire
     "gitlens.codeLens.enabled": true,
