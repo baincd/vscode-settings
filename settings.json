@@ -237,58 +237,58 @@
     // #region SettingsOnFire Extension Settings
     "settingsOnFire.toggle": {
         "Theme": {
-            "on": {  "_label": "light → dark", "workbench.colorTheme": "Default Dark+" },
-            "off": { "_label": "dark → light", "workbench.colorTheme": "Quiet Light"   }
+            "on": {  "_label": "light", "workbench.colorTheme": "Default Dark+" },
+            "off": { "_label": "dark",  "workbench.colorTheme": "Quiet Light"   }
         },
         "Git Code Lens": {
-            "on": {  "_label": "enabled → disabled", "gitlens.codeLens.enabled": false },
-            "off": { "_label": "disabled → enabled", "gitlens.codeLens.enabled": true  }
+            "on": {  "_label": "enabled",  "gitlens.codeLens.enabled": false },
+            "off": { "_label": "disabled", "gitlens.codeLens.enabled": true  }
         },
         "Java Code Lens": {
-            "on": {  "_label": "enabled → disabled", "java.referencesCodeLens.enabled": false,
-                                                     "java.implementationsCodeLens.enabled": false},
-            "off": { "_label": "disabled → enabled", "java.referencesCodeLens.enabled": true, 
-                                                     "java.implementationsCodeLens.enabled": true},
+            "on": {  "_label": "enabled",  "java.referencesCodeLens.enabled": false,
+                                           "java.implementationsCodeLens.enabled": false},
+            "off": { "_label": "disabled", "java.referencesCodeLens.enabled": true, 
+                                           "java.implementationsCodeLens.enabled": true},
         },
         "Editor Code Lens": {
-            "on": {  "_label": "enabled → disabled", "editor.codeLens": false },
-            "off": { "_label": "disabled → enabled", "editor.codeLens": true },
+            "on": {  "_label": "enabled",  "editor.codeLens": false },
+            "off": { "_label": "disabled", "editor.codeLens": true  },
         },
         "Diff Editor Code Lens": {
-            "on": {  "_label": "disabled → enabled", "diffEditor.codeLens": true },
-            "off": { "_label": "enabled → disabled", "diffEditor.codeLens": false },
+            "on": {  "_label": "disabled", "diffEditor.codeLens": true },
+            "off": { "_label": "enabled", "diffEditor.codeLens": false },
         },
-        "Java Automatic Build Disabled": {
-            "on": {  "_label": "off → on",  "java.autobuild.enabled": false, },
-            "off": { "_label": "🟢on → off", "java.autobuild.enabled": true,  }
+        "Java Automatic Build": {
+            "on": {  "_label": "on",    "java.autobuild.enabled": false, },
+            "off": { "_label": "🔴off", "java.autobuild.enabled": true,  }
         },
-        "Editor Hovers Disabled": {
-            "on": {  "_label": "off → on",  "editor.hover.enabled": false, },
-            "off": { "_label": "🟢on → off", "editor.hover.enabled": true, }
+        "Editor Hovers": {
+            "on": {  "_label": "on",  "editor.hover.enabled": false, },
+            "off": { "_label": "🔴off", "editor.hover.enabled": true, }
         },
-        "Git Lens Hovers Enabled": {
-            "on": {  "_label": "off → on",  "gitlens.hovers.enabled": true, },
-            "off": { "_label": "🟢on → off", "gitlens.hovers.enabled": false, }
+        "Git Lens Hovers": {
+            "on": {  "_label": "off",  "gitlens.hovers.enabled": true, },
+            "off": { "_label": "🟢on", "gitlens.hovers.enabled": false, }
         },
         "Screenshot Mode": {
-            "on": {  "_label": "off → on"  , "breadcrumbs.enabled": false, "editor.renderLineHighlight": "none", "markdown-color-plus.currentHeaders.background.enabled": false, "cSpell.enabled": false, "editor.hover.enabled": false, "todo-tree.highlights.enabled": false, "errorLens.enabled": false, },
-            "off": { "_label": "🟢on → off", "breadcrumbs.enabled": true,  "editor.renderLineHighlight": "line", "markdown-color-plus.currentHeaders.background.enabled": true,  "cSpell.enabled": true,  "editor.hover.enabled": true,  "todo-tree.highlights.enabled": true,  "errorLens.enabled": true,  }
+            "on": {  "_label": "off",  "breadcrumbs.enabled": false, "editor.renderLineHighlight": "none", "markdown-color-plus.currentHeaders.background.enabled": false, "cSpell.enabled": false, "editor.hover.enabled": false, "todo-tree.highlights.enabled": false, "errorLens.enabled": false, },
+            "off": { "_label": "🟢on", "breadcrumbs.enabled": true,  "editor.renderLineHighlight": "line", "markdown-color-plus.currentHeaders.background.enabled": true,  "cSpell.enabled": true,  "editor.hover.enabled": true,  "todo-tree.highlights.enabled": true,  "errorLens.enabled": true,  }
         },
-        "Disable Todo Highlighting": {
-            "on": {  "_label": "off → on"  , "todo-tree.highlights.enabled": false, },
-            "off": { "_label": "🟢on → off", "todo-tree.highlights.enabled": true,  }
+        "Todo Highlighting": {
+            "on": {  "_label": "on",    "todo-tree.highlights.enabled": false, },
+            "off": { "_label": "🔴off", "todo-tree.highlights.enabled": true,  }
         },
-        "Disable Error Lens": {
-            "on": {  "_label": "off → on"  , "errorLens.enabled": false, },
-            "off": { "_label": "🟢on → off", "errorLens.enabled": true,  }
+        "Error Lens": {
+            "on": {  "_label": "on",    "errorLens.enabled": false, },
+            "off": { "_label": "🔴off", "errorLens.enabled": true,  }
         },
-        "Hide Spelling Errors from Problems View": {
-            "on": {  "_label": "off → on",  "cSpell.diagnosticLevel": "Hint",        },
-            "off": { "_label": "🟢on → off", "cSpell.diagnosticLevel": "Information", }
+        "Spelling Errors Severity": {
+            "on": {  "_label": "info",   "cSpell.diagnosticLevel": "Hint",        },
+            "off": { "_label": "🔴hint", "cSpell.diagnosticLevel": "Information", }
         },
-        "No EOF New Line": {
-            "on": {  "_label": "off → on",  "files.insertFinalNewline": false  },
-            "off": { "_label": "🟢on → off", "files.insertFinalNewline": true   }
+        "Insert EOF New Line": {
+            "on": {  "_label": "on",    "files.insertFinalNewline": false  },
+            "off": { "_label": "🔴off", "files.insertFinalNewline": true   }
         },
     },
     // Settings that are not changed from the default, but may be toggled by Settings-on-fire
