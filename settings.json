@@ -274,6 +274,14 @@
             "on": {  "_label": "off → on"  , "breadcrumbs.enabled": false, "editor.renderLineHighlight": "none", "markdown-color-plus.currentHeaders.background.enabled": false, "cSpell.enabled": false, "editor.hover.enabled": false, "todo-tree.highlights.enabled": false, "errorLens.enabled": false, },
             "off": { "_label": "🟢on → off", "breadcrumbs.enabled": true,  "editor.renderLineHighlight": "line", "markdown-color-plus.currentHeaders.background.enabled": true,  "cSpell.enabled": true,  "editor.hover.enabled": true,  "todo-tree.highlights.enabled": true,  "errorLens.enabled": true,  }
         },
+        "Disable Todo Highlighting": {
+            "on": {  "_label": "off → on"  , "todo-tree.highlights.enabled": false, },
+            "off": { "_label": "🟢on → off", "todo-tree.highlights.enabled": true,  }
+        },
+        "Disable Error Lens": {
+            "on": {  "_label": "off → on"  , "errorLens.enabled": false, },
+            "off": { "_label": "🟢on → off", "errorLens.enabled": true,  }
+        },
         "Hide Spelling Errors from Problems View": {
             "on": {  "_label": "off → on",  "cSpell.diagnosticLevel": "Hint",        },
             "off": { "_label": "🟢on → off", "cSpell.diagnosticLevel": "Information", }
