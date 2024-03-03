@@ -50,6 +50,12 @@
         }
 
     },
+    // Quiet Light headers
+    "markdown-color-plus.setextL1StyleHeader.style.text.enabled": true,
+    "markdown-color-plus.setextL2StyleHeader.style.text.enabled": true,
+    "markdown-color-plus.setextL1StyleHeader.style.text.lightThemeColor": "#AA3731",
+    "markdown-color-plus.setextL2StyleHeader.style.text.lightThemeColor": "#AA3731",
+
     "workbench.iconTheme": "vscode-icons",
     // #endregion
 
