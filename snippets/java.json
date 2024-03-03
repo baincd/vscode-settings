@@ -46,6 +46,14 @@
 	"Quick Log": {
 		"prefix": "quick log",
 		"body": "org.slf4j.LoggerFactory.getLogger($TM_FILENAME_BASE.class).${1:debug}(\"$0\");"
+	},
+	"MessageFormat": {
+		"prefix": "format-with-placeholder",
+		"body": "format${1}(\"${2:Hello} {0}\", ${3:\"World\"}))${0}"
+	},
+	"SLF4J": {
+		"prefix": "log-with-placeholder",
+		"body": "${1:log}.${2:debug}(\"${3:Hello} {}\", ${4:\"World\"});${0}"
 	}
 }
 
