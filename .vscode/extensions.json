@@ -16,6 +16,7 @@
         // /*WINDOWS ONLY*/ "baincd.copy-path-unixstyle", // Copy Path (Unix Style)
 
         // ## Awesome Text Editor
+        "baincd.inline-diff-toggle-button", // Inline/Side-by-Side Toggle Button
         "ryu1kn.partial-diff", // Partial Diff
         "yo1dog.cursor-align", // Cursor Align
         "earshinov.filter-lines", // Filter Lines (grep command)
