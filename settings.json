@@ -62,6 +62,7 @@
     // #region UI Settings
     "window.title": "${rootName}${separator}${dirty}${activeEditorShort}",  // Default: "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
     "window.titleBarStyle": "custom",
+    "window.customTitleBarVisibility": "windowed",
     "window.commandCenter": false,
     "window.menuBarVisibility": "hidden",
     "workbench.activityBar.location": "top",
