@@ -358,33 +358,20 @@
     // #region Commands Extension Settings
     "commands.commands": {
         "commands.custom.format-json-doc": {
-
             "sequence": [
-                {
-                    "command": "commands.setEditorLanguage",
-                    "args": "json"
-                },
-                {
-                    "delay": 100,
-                    "command": "editor.action.formatDocument"
-                },
-                {
-                    "command": "cursorTop"
-                }
+                { "command": "commands.setEditorLanguage",
+                     "args": "json" },
+                {   "delay": 100,
+                    "command": "editor.action.formatDocument" },
+                {   "command": "cursorTop" }
             ]
         },
         "commands.custom.fold-doc": {
             "sequence": [
-                {
-                    "command": "cursorTop"
-                },
-                {
-                    "command": "editor.foldRecursively",
-                },
-                {
-//                     "command": "editor.unfold"
-                    "command": "cursorMove",
-                    "args": {
+                { "command": "cursorTop" },
+                { "command": "editor.foldRecursively" },
+                { "command": "cursorMove", // "command": "editor.unfold" doesn't work
+                     "args": {
                         "to": "down",
                         "by": "line",
                         "value": 1
@@ -394,26 +381,13 @@
         },
         "commands.custom.showActiveFileInExplorer": {
             "sequence": [
-                {
-                    "command": "commands.toggleSetting",
-                    "args": {
-                        "setting": "explorer.autoReveal",
-                        "value": [true]
-                    }
-                },
-                {
-                    "command": "workbench.view.search" // If the explorer view was already open this doesn't work, so move to a different view first
-                },
-                {
-                    "command": "workbench.explorer.fileView.focus"
-                },
-                {
-                    "command": "commands.toggleSetting",
-                    "args": {
-                        "setting": "explorer.autoReveal",
-                        "value": [false]
-                    }
-                },
+                { "command": "commands.toggleSetting",
+                     "args": { "setting": "explorer.autoReveal", "value": [true] }},
+                { "command": "workbench.view.search" }, // If the explorer view was already open this doesn't work, so move to a different view first
+                { "command": "workbench.explorer.fileView.focus" },
+                { "command": "commands.toggleSetting",
+                     "args": { "setting": "explorer.autoReveal", "value": [false] }
+                }
             ]
         }
     },
