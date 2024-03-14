@@ -101,6 +101,7 @@
     "workbench.editorAssociations": {
         "git-rebase-todo": "default"
     },
+    "diffEditor.renderSideBySideInlineBreakpoint": 500,
     // #endregion
 
     // #region Terminal Settings
