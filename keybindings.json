@@ -97,6 +97,8 @@
                                      "args": { "text": "\t" },
                                      "when": "editorTextFocus" },
 { "key": "ctrl+; space",          "command": "my-cheatsheet.showCheatsheetToSide" },
+{ "key": "ctrl+alt+k",            "command": "-rest-client.cancel-request",
+                                     "when": "editorTextFocus && editorLangId == 'plaintext'" },
 
 //////////////////////////////////////// Local Workstation Keybindings
 
