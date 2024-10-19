@@ -185,6 +185,24 @@
     },
     // #endregion
 
+    // #region Stretchy Spaces
+    "editor.guides.indentation": false,
+    "guides.enabled": true,
+    "guides.sendUsagesAndStats": false,
+    "guides.limit.maximum": -1,
+    "stretchySpaces.includedLanguages": [
+        "java",
+        "javascript",
+        "typescript",
+        "json",
+        "xml",
+    ],
+    "stretchySpaces.alignmentDetection.enabled": true,
+    "stretchySpaces.alignmentDetection.maxIndentationLevelIncrease": 1.5,
+    "stretchySpaces.alignmentIndicator.text": "⇥",
+    "stretchySpaces.alignmentIndicator.textWidth": "1.5ch",
+    // #endregion
+
     // #region Todo Tree Extension Settings
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+\\.)[ \\t]|\\*\\*)[ \\t]*($TAGS)", // Add **, Fixes to default (Whitespace in pattern does not match newlines, escape '.', require whitespace after bullet/number in md lists)
     "todo-tree.general.tags": [
