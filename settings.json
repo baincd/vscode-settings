@@ -138,6 +138,20 @@
     // #endregion
 
     // #region Misc Extensions Settings
+    "color-highlight.matchWords": true,
+    "color-highlight.languages": [
+        "snippets",
+        "css",
+        "diff",
+        "git-commit",
+        "html",
+        "ini",
+        "javascript",
+        "json",
+        "jsonl",
+        "jsonc",
+        "scss",
+        "typescript",
     "cSpell.enableFiletypes": [
         "git-rebase",
         "shellscript"
