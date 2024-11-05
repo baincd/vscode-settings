@@ -393,7 +393,7 @@
             "sequence": [
                 { "command": "commands.setEditorLanguage",
                      "args": "json" },
-                {   "delay": 100,
+                {   "delay": 300,
                     "command": "editor.action.formatDocument" },
                 {   "command": "cursorTop" }
             ]
