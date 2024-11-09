@@ -91,6 +91,7 @@
     // #region Editor Settings
     "editor.linkedEditing": true, // Depending on the language, related symbols, e.g. HTML tags, are updated while editing.
     "editor.copyWithSyntaxHighlighting": false,
+    "editor.stickyScroll.maxLineCount": 10,
     "editor.emptySelectionClipboard": false,
     "files.insertFinalNewline": true, // Default to true, may be changed by Settings-on-fire
     "editor.comments.ignoreEmptyLines": false,
