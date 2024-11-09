@@ -862,6 +862,13 @@
     "maven.view": "hierarchical",
     // #endregion Java Settings
 
+    // #region TypeScript settings
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
+    // #endregion
+
     //////////////////////////////////////// Local Workstation Settings
     "update.mode": "default",
     "update.enableWindowsBackgroundUpdates": true,
