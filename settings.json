@@ -867,10 +867,15 @@
     // #endregion
 
     //////////////////////////////////////// Local Workstation Settings
-    "update.mode": "default",
-    "update.enableWindowsBackgroundUpdates": true,
+    // #region Frequently toggled settings
     "diffEditor.renderSideBySide": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.experimental.showMoves": true,
+    // #endregion
+
+    // Recently Changed Settings
+    "update.mode": "default",
+    "update.enableWindowsBackgroundUpdates": true,
 
 }
