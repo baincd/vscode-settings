@@ -66,6 +66,7 @@
 
         // # Other Useful Extensions
         // "hediet.vscode-drawio", // Draw.io Integration
+        // "ms-vscode.hexeditor", // Hex Editor
         // "humao.rest-client", // REST Client
         // "drmerfy.overtype", // Overtype
         // "mehyaa.workspace-storage-cleanup", // Workspace Storage Cleanup
