@@ -135,7 +135,7 @@
     // #endregion
 
     // #region Debugging Settings
-    "debug.autoExpandLazyVariables": true,
+    "debug.autoExpandLazyVariables": "on",
     // #endregion
 
     // #region Misc Extensions Settings
@@ -153,9 +153,6 @@
         "jsonc",
         "scss",
         "typescript",
-    "cSpell.enableFiletypes": [
-        "git-rebase",
-        "shellscript"
     ],
     "coverage-gutters.showLineCoverage": true,
     "filterlines.createNewTab": false,
@@ -799,7 +796,6 @@
     "java.referencesCodeLens.enabled": true, // Default to true, may be changed by Settings-on-fire
     "java.implementationsCodeLens.enabled": true, // Default to true, may be changed by Settings-on-fire
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.test.report.showAfterExecution": "always",
     "java.completion.favoriteStaticMembers": [
         "java.text.MessageFormat.*", // Added
 
